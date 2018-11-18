@@ -1,0 +1,23 @@
+public class Book {
+   private int catalogueNumber;
+   private String author;
+   private String title;
+   
+   public Book(int catalogueNumber, String author, String title){
+      this.catalogueNumber = catalogueNumber;
+      this.author = author;
+      this.title = title;
+   }
+
+   public int getCatalogueNumber() {
+      return catalogueNumber;
+   }
+
+   public String getAuthor() {
+      return author;
+   }
+
+   public String getTitle() {
+      return title;
+   }
+   
