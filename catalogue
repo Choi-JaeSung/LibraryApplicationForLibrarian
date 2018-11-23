@@ -1,0 +1,1002 @@
+<form name=data>
+
+<input type=hidden name='000 총류'>
+<input type=hidden name='001 지식, 학문 일반'>
+<input type=hidden name='002'>
+<input type=hidden name='003 시스템'>
+<input type=hidden name='004 전산학'>
+<input type=hidden name='005 프로그래밍, 프로그램, 데이터'>
+<input type=hidden name='006'>
+<input type=hidden name='007 연구 일반 및 방법론'>
+<input type=hidden name='008'>
+<input type=hidden name='009'>
+<input type=hidden name='010 도서학, 서지학'>
+<input type=hidden name='011 저작권법'>
+<input type=hidden name='012 판본, 제본, 출판'>
+<input type=hidden name='013'>
+<input type=hidden name='014 개인서목'>
+<input type=hidden name='015 국별서목'>
+<input type=hidden name='016 주제별서목'>
+<input type=hidden name='017 특수서목'>
+<input type=hidden name='018 참고서지'>
+<input type=hidden name='019 장서목록'>
+<input type=hidden name='020 문헌정보학'>
+<input type=hidden name='021 도서관행정 및 재정'>
+<input type=hidden name='022 도서관건물 및 설비'>
+<input type=hidden name='023 도서관 경영, 관리'>
+<input type=hidden name='024 수서, 정리 및 보관'>
+<input type=hidden name='025 도서관봉사 및 활동'>
+<input type=hidden name='026 일반 도서관'>
+<input type=hidden name='027 학교 및 대학도서관'>
+<input type=hidden name='028'>
+<input type=hidden name='029 독서 및 정보매체의 이용'>
+<input type=hidden name='030 백과사전'>
+<input type=hidden name='031 한국어'>
+<input type=hidden name='032 중국어'>
+<input type=hidden name='033 일본어'>
+<input type=hidden name='034 영어'>
+<input type=hidden name='035 독일어'>
+<input type=hidden name='036 프랑스어'>
+<input type=hidden name='037 스페인어'>
+<input type=hidden name='038 이탈리아어'>
+<input type=hidden name='039 기타 제언어'>
+<input type=hidden name='040 일반 논문집'>
+<input type=hidden name='041 한국어'>
+<input type=hidden name='042 중국어'>
+<input type=hidden name='043 일본어'>
+<input type=hidden name='044 영어'>
+<input type=hidden name='045 독일어'>
+<input type=hidden name='046 프랑스어'>
+<input type=hidden name='047 스페인어'>
+<input type=hidden name='048 이탈이아어'>
+<input type=hidden name='049 기타 제언어'>
+<input type=hidden name='050 일반 연속간행물'>
+<input type=hidden name='051 한국어'>
+<input type=hidden name='052 중국어'>
+<input type=hidden name='053 일본어'>
+<input type=hidden name='054 영어'>
+<input type=hidden name='055 독일어'>
+<input type=hidden name='056 프랑스어'>
+<input type=hidden name='057 스페인어'>
+<input type=hidden name='058 기타 제언어'>
+<input type=hidden name='059 연감'>
+<input type=hidden name='060 일반 학회, 단체, 협회, 기관'>
+<input type=hidden name='061 아시아 일반 학회, 단체 등'>
+<input type=hidden name='062 유럽 일반 학회, 단체 등'>
+<input type=hidden name='063 아프리카 일반 학회, 단체 등'>
+<input type=hidden name='064 북아메리카 일반 학회, 단체 등'>
+<input type=hidden name='065 남아메리카 일반 학회, 단체 등'>
+<input type=hidden name='066 오세아니아 일반 학회, 단체 등'>
+<input type=hidden name='067 양극지방 일반 학회, 단체 등'>
+<input type=hidden name='068'>
+<input type=hidden name='069 박물관학'>
+<input type=hidden name='070 신문, 언론, 저널리즘'>
+<input type=hidden name='071 아시아 신문'>
+<input type=hidden name='072 유럽 신문, 언론, 저널리즘'>
+<input type=hidden name='073 아프리카 신문, 언론, 저널리즘'>
+<input type=hidden name='074 북아메리카 신문, 언론, 저널리즘'>
+<input type=hidden name='075 남아메리카 신문, 언론, 저널리즘'>
+<input type=hidden name='076 오세아니아 신문, 언론, 저널리즘'>
+<input type=hidden name='077 양극지방 신문, 언론, 저널리즘'>
+<input type=hidden name='078 특정주제의 신문'>
+<input type=hidden name='079'>
+<input type=hidden name='080 일반 전집, 총서'>
+<input type=hidden name='081 개인의 일반 전집'>
+<input type=hidden name='082 2인 이상의 일반 전집, 총서'>
+<input type=hidden name='083'>
+<input type=hidden name='084'>
+<input type=hidden name='085'>
+<input type=hidden name='086'>
+<input type=hidden name='087'>
+<input type=hidden name='088'>
+<input type=hidden name='089'>
+<input type=hidden name='090  '>
+<input type=hidden name='091'>
+<input type=hidden name='092'>
+<input type=hidden name='093'>
+<input type=hidden name='094'>
+<input type=hidden name='095'>
+<input type=hidden name='096'>
+<input type=hidden name='097'>
+<input type=hidden name='098'>
+<input type=hidden name='099'>
+<input type=hidden name='100 철학'>
+<input type=hidden name='101 이론 및 철학의 효용'>
+<input type=hidden name='102 잡저'>
+<input type=hidden name='103 辭典, 事典, 用語辭典'>
+<input type=hidden name='104 강연집, 수필집'>
+<input type=hidden name='105 연속간행물'>
+<input type=hidden name='106 학회, 단체, 기관, 회의'>
+<input type=hidden name='107 지도법, 연구법 및 교육, 교육자료'>
+<input type=hidden name='108 총서, 전집, 선집'>
+<input type=hidden name='109 철학사'>
+<input type=hidden name='110 형이상학'>
+<input type=hidden name='111 방법론'>
+<input type=hidden name='112 존재론'>
+<input type=hidden name='113 우주론 및 자연철학'>
+<input type=hidden name='114 철학적 인간학'>
+<input type=hidden name='115 인식론'>
+<input type=hidden name='116 자유 및 필연'>
+<input type=hidden name='117 목적론'>
+<input type=hidden name='118 가치론'>
+<input type=hidden name='119 인과론(인과성)'>
+<input type=hidden name='120'>
+<input type=hidden name='121'>
+<input type=hidden name='122'>
+<input type=hidden name='123'>
+<input type=hidden name='124'>
+<input type=hidden name='125'>
+<input type=hidden name='126'>
+<input type=hidden name='127'>
+<input type=hidden name='128'>
+<input type=hidden name='129'>
+<input type=hidden name='130 철학의 체계'>
+<input type=hidden name='131 관념론 및 관련철학'>
+<input type=hidden name='132 비판철학'>
+<input type=hidden name='133 합리론'>
+<input type=hidden name='134 인문주의'>
+<input type=hidden name='135 경험론'>
+<input type=hidden name='136 자연주의'>
+<input type=hidden name='137 유물론'>
+<input type=hidden name='138 과학주의철학'>
+<input type=hidden name='139 기타'>
+<input type=hidden name='140 경학'>
+<input type=hidden name='141 역류'>
+<input type=hidden name='142 서류'>
+<input type=hidden name='143 시류'>
+<input type=hidden name='144 예류'>
+<input type=hidden name='145 악류'>
+<input type=hidden name='146 춘추류'>
+<input type=hidden name='147 효경'>
+<input type=hidden name='148 사서'>
+<input type=hidden name='149'>
+<input type=hidden name='150 아시아(동양) 철학, 사상'>
+<input type=hidden name='151 한국철학, 사상'>
+<input type=hidden name='152 중국철학, 사상'>
+<input type=hidden name='153 일본철학, 사상'>
+<input type=hidden name='154 동남아시아 제국철학, 사상'>
+<input type=hidden name='155 인도철학, 사상'>
+<input type=hidden name='156 중앙아시아 제국철학, 사상'>
+<input type=hidden name='157 시베리아 철학, 사상'>
+<input type=hidden name='158 서남아시아(근동, 중동) 제국철학, 사상'>
+<input type=hidden name='159 아랍 제국철학, 사상'>
+<input type=hidden name='160 서양철학'>
+<input type=hidden name='161'>
+<input type=hidden name='162 미국철학'>
+<input type=hidden name='163 북구철학'>
+<input type=hidden name='164 영국철학'>
+<input type=hidden name='165 독일, 오스트리아철학'>
+<input type=hidden name='166 프랑스, 네덜란드철학'>
+<input type=hidden name='167 스페인, 포르투갈철학'>
+<input type=hidden name='168 이탈리아철학'>
+<input type=hidden name='169 러시아철학'>
+<input type=hidden name='170 논리학'>
+<input type=hidden name='171 연역법'>
+<input type=hidden name='172 귀납법'>
+<input type=hidden name='173 변증법적 논리학'>
+<input type=hidden name='174 기호, 수리논리학'>
+<input type=hidden name='175 오류'>
+<input type=hidden name='176'>
+<input type=hidden name='177 가정'>
+<input type=hidden name='178 유추'>
+<input type=hidden name='179 논증, 설득'>
+<input type=hidden name='180 심리학'>
+<input type=hidden name='181 각론'>
+<input type=hidden name='182 차이심리학'>
+<input type=hidden name='183 발달심리학'>
+<input type=hidden name='184 이상심리학'>
+<input type=hidden name='185 생리심리학'>
+<input type=hidden name='186 임상심리학'>
+<input type=hidden name='187 심령연구 및 비학, 초심리학'>
+<input type=hidden name='188 상법, 운명판단'>
+<input type=hidden name='189 응용심리학 일반'>
+<input type=hidden name='190 윤리학, 도덕철학'>
+<input type=hidden name='191 일반윤리학 각론'>
+<input type=hidden name='192 가정윤리'>
+<input type=hidden name='193 국가 및 정치윤리'>
+<input type=hidden name='194 사회윤리'>
+<input type=hidden name='195 직업윤리 일반'>
+<input type=hidden name='196 오락 및 경기윤리'>
+<input type=hidden name='197 성윤리'>
+<input type=hidden name='198 소비윤리'>
+<input type=hidden name='199 도덕훈, 교훈'>
+<input type=hidden name='200 종교'>
+<input type=hidden name='201 종교철학 및 종교사상'>
+<input type=hidden name='202 잡저'>
+<input type=hidden name='203 辭典, 事典'>
+<input type=hidden name='204 자연종교, 자연신학'>
+<input type=hidden name='205 연속간행물'>
+<input type=hidden name='206 학회, 단체, 기관, 회의'>
+<input type=hidden name='207 지도법, 연구법 및 교육, 교육자료'>
+<input type=hidden name='208 총서, 전집, 선집'>
+<input type=hidden name='209 종교사'>
+<input type=hidden name='210 비교종교학'>
+<input type=hidden name='211 교리'>
+<input type=hidden name='212 종 조, 교조, 개종자'>
+<input type=hidden name='213 종전, 교전'>
+<input type=hidden name='214 종교신앙, 신앙록, 신앙(수도)생활'>
+<input type=hidden name='215 종교포교, 전도활동, 교화활동'>
+<input type=hidden name='216 종단, 교단(교당론)'>
+<input type=hidden name='217 예배형식, 의식, 전례'>
+<input type=hidden name='218 종파, 교파'>
+<input type=hidden name='219 신화, 신화학'>
+<input type=hidden name='220 불교'>
+<input type=hidden name='221 교리철학'>
+<input type=hidden name='222 제불, 보살, 불제자'>
+<input type=hidden name='223 경전(불전, 대장경)'>
+<input type=hidden name='224 법어, 신앙록, 신앙생활'>
+<input type=hidden name='225 포교, 교육, 교화활동'>
+<input type=hidden name='226 사원론'>
+<input type=hidden name='227 법회, 의식, 행사(의궤)'>
+<input type=hidden name='228 종파'>
+<input type=hidden name='229 라마교'>
+<input type=hidden name='230 기독교'>
+<input type=hidden name='231 기독교신학, 교의학(조직신학)'>
+<input type=hidden name='232 예수그리스도, 사도'>
+<input type=hidden name='233 성서'>
+<input type=hidden name='234 신앙록, 명상록, 신앙생활'>
+<input type=hidden name='235 포교, 교육, 교화활동, 목회학'>
+<input type=hidden name='236 교회론'>
+<input type=hidden name='237 예배, 전례, 성례'>
+<input type=hidden name='238 교파'>
+<input type=hidden name='239 유태교'>
+<input type=hidden name='240 도교'>
+<input type=hidden name='241 교의, 신선사상'>
+<input type=hidden name='242 교조, 개조(장도능)'>
+<input type=hidden name='243 도장'>
+<input type=hidden name='244 신앙록, 신앙생활'>
+<input type=hidden name='245 포교, 전도, 교육, 교화활동'>
+<input type=hidden name='246 사원론(도관)'>
+<input type=hidden name='247 행사, 법술'>
+<input type=hidden name='248 교파'>
+<input type=hidden name='249'>
+<input type=hidden name='250 천도교'>
+<input type=hidden name='251'>
+<input type=hidden name='252'>
+<input type=hidden name='253'>
+<input type=hidden name='254'>
+<input type=hidden name='255'>
+<input type=hidden name='256'>
+<input type=hidden name='257'>
+<input type=hidden name='258 동학교분파'>
+<input type=hidden name='259 단군교, 대종교'>
+<input type=hidden name='260 신도'>
+<input type=hidden name='261'>
+<input type=hidden name='262'>
+<input type=hidden name='263'>
+<input type=hidden name='264'>
+<input type=hidden name='265'>
+<input type=hidden name='266'>
+<input type=hidden name='267'>
+<input type=hidden name='268'>
+<input type=hidden name='269'>
+<input type=hidden name='270 바라문교, 인도교'>
+<input type=hidden name='271'>
+<input type=hidden name='272'>
+<input type=hidden name='273'>
+<input type=hidden name='274'>
+<input type=hidden name='275'>
+<input type=hidden name='276'>
+<input type=hidden name='277'>
+<input type=hidden name='278'>
+<input type=hidden name='279 지나교'>
+<input type=hidden name='280 회교(이슬람교)'>
+<input type=hidden name='281'>
+<input type=hidden name='282'>
+<input type=hidden name='283'>
+<input type=hidden name='284'>
+<input type=hidden name='285'>
+<input type=hidden name='286'>
+<input type=hidden name='287'>
+<input type=hidden name='288'>
+<input type=hidden name='289 조로아스타교'>
+<input type=hidden name='290 기타 제종교'>
+<input type=hidden name='291 아시아'>
+<input type=hidden name='292 유럽'>
+<input type=hidden name='293 아프리카'>
+<input type=hidden name='294 북아메리카'>
+<input type=hidden name='295 남아메리카'>
+<input type=hidden name='296 오세아니아'>
+<input type=hidden name='297 양극지방'>
+<input type=hidden name='298'>
+<input type=hidden name='299'>
+<input type=hidden name='300 사회과학'>
+<input type=hidden name='301 사회사상'>
+<input type=hidden name='302 잡저'>
+<input type=hidden name='303 辭典, 事典'>
+<input type=hidden name='304 강연집, 수필집, 연설문집'>
+<input type=hidden name='305 연속간행물'>
+<input type=hidden name='306 학회, 단체, 협회, 기관, 회의'>
+<input type=hidden name='307 연구법, 연구방법 및 교육'>
+<input type=hidden name='308 총서, 전집, 선집'>
+<input type=hidden name='309 정치, 경제, 사회, 문화사정, 역사'>
+<input type=hidden name='310 통계학'>
+<input type=hidden name='311 아시아'>
+<input type=hidden name='312 유럽'>
+<input type=hidden name='313 아프리카'>
+<input type=hidden name='314 북아메리카'>
+<input type=hidden name='315 남아메리카'>
+<input type=hidden name='316 오세아니아'>
+<input type=hidden name='317 양극지방'>
+<input type=hidden name='318'>
+<input type=hidden name='319 인구통계'>
+<input type=hidden name='320 경제학'>
+<input type=hidden name='321 경제각론'>
+<input type=hidden name='322 경제정책'>
+<input type=hidden name='323 산업경제 일반'>
+<input type=hidden name='324 기업경영'>
+<input type=hidden name='325 경영관리'>
+<input type=hidden name='326 공익사업'>
+<input type=hidden name='327 금융'>
+<input type=hidden name='328 보험'>
+<input type=hidden name='329 재정'>
+<input type=hidden name='330 사회학, 사회문제'>
+<input type=hidden name='331 사회학'>
+<input type=hidden name='332 사회조직 및 제도'>
+<input type=hidden name='333'>
+<input type=hidden name='334 사회문제'>
+<input type=hidden name='335 생활문제'>
+<input type=hidden name='336 노동문제'>
+<input type=hidden name='337 여성문제'>
+<input type=hidden name='338 사회복지'>
+<input type=hidden name='339 사회단체'>
+<input type=hidden name='340 정치학'>
+<input type=hidden name='341 국가형태'>
+<input type=hidden name='342 국가와 개인 및 집단'>
+<input type=hidden name='343'>
+<input type=hidden name='344 선거'>
+<input type=hidden name='345 입법'>
+<input type=hidden name='346 정당'>
+<input type=hidden name='347'>
+<input type=hidden name='348'>
+<input type=hidden name='349 외교, 국제관계'>
+<input type=hidden name='350 행정학'>
+<input type=hidden name='351 아시아 중앙행정 및 행정부'>
+<input type=hidden name='352 유럽 중앙행정 및 행정부'>
+<input type=hidden name='353 아프리카 중앙행정 및 행정부'>
+<input type=hidden name='354 북아메리카 중앙행정 및 행정부'>
+<input type=hidden name='355 남아메리카 중앙행정 및 행정부'>
+<input type=hidden name='356 오세아니아 중앙행정 및 행정부'>
+<input type=hidden name='357 양극지방 중앙행정 및 행정부'>
+<input type=hidden name='358'>
+<input type=hidden name='359 지방자치 및 행정'>
+<input type=hidden name='360 법학'>
+<input type=hidden name='361 국제법'>
+<input type=hidden name='362 헌법'>
+<input type=hidden name='363 행정법'>
+<input type=hidden name='364 형법'>
+<input type=hidden name='365 민법'>
+<input type=hidden name='366 상법'>
+<input type=hidden name='367 사법제도 및 소송법'>
+<input type=hidden name='368 기타 제법'>
+<input type=hidden name='369 각국 법 및 예규'>
+<input type=hidden name='370 교육학'>
+<input type=hidden name='371 교육정책 및 행정'>
+<input type=hidden name='372 학교행정 및 경영, 보건'>
+<input type=hidden name='373 학습지도, 교육방법'>
+<input type=hidden name='374 교육과정'>
+<input type=hidden name='375 유아 및 초등교육'>
+<input type=hidden name='376 중등교육'>
+<input type=hidden name='377 대학, 전문, 고등교육'>
+<input type=hidden name='378 사회교육'>
+<input type=hidden name='379 특수교육'>
+<input type=hidden name='380 풍속, 민속학'>
+<input type=hidden name='381 의식주의 풍습'>
+<input type=hidden name='382 가정생활의 풍습'>
+<input type=hidden name='383 사회생활의 풍습'>
+<input type=hidden name='384 관혼상제'>
+<input type=hidden name='385 예의작법'>
+<input type=hidden name='386 축제, 연중행사'>
+<input type=hidden name='387 전쟁풍습'>
+<input type=hidden name='388 민간전승'>
+<input type=hidden name='389 민족학'>
+<input type=hidden name='390 국방, 군사학'>
+<input type=hidden name='391 군사행정'>
+<input type=hidden name='392 전략, 전술'>
+<input type=hidden name='393 군사교육 및 훈련'>
+<input type=hidden name='394 군사시설 및 장비'>
+<input type=hidden name='395 군특수기술근무'>
+<input type=hidden name='396 육군'>
+<input type=hidden name='397 해군'>
+<input type=hidden name='398 공군'>
+<input type=hidden name='399 고대병법'>
+<input type=hidden name='400 순수과학'>
+<input type=hidden name='401 과학이론, 과학철학'>
+<input type=hidden name='402 잡저(편람, 제표, 서지, 인명록)'>
+<input type=hidden name='403 辭典, 事典'>
+<input type=hidden name='404 강연집, 수필집, 연설문집'>
+<input type=hidden name='405 연속간행물'>
+<input type=hidden name='406 학회, 단체, 기관, 회의'>
+<input type=hidden name='407 지도법, 연구법 및 교육, 교육자료'>
+<input type=hidden name='408 전집, 총서'>
+<input type=hidden name='409 과학사 및 지역구분'>
+<input type=hidden name='410 수학'>
+<input type=hidden name='411 산수'>
+<input type=hidden name='412 대수학'>
+<input type=hidden name='413 확률론, 통계수학'>
+<input type=hidden name='414 해석학'>
+<input type=hidden name='415 기하학'>
+<input type=hidden name='416 화법기하학(도학)'>
+<input type=hidden name='417 삼각법'>
+<input type=hidden name='418 해석기하학'>
+<input type=hidden name='419 기타 산법'>
+<input type=hidden name='420 물리학'>
+<input type=hidden name='421 고체역학'>
+<input type=hidden name='422 유체역학'>
+<input type=hidden name='423 기체역학'>
+<input type=hidden name='424 음향학, 진동학'>
+<input type=hidden name='425 광학'>
+<input type=hidden name='426 열학'>
+<input type=hidden name='427 전기학 및 전자학'>
+<input type=hidden name='428 자기'>
+<input type=hidden name='429 현대물리학'>
+<input type=hidden name='430 화학'>
+<input type=hidden name='431 이론화학과 물리화학'>
+<input type=hidden name='432 화학실험실, 기구, 시설'>
+<input type=hidden name='433 분석화학'>
+<input type=hidden name='434 합성화학 일반'>
+<input type=hidden name='435 무기화학'>
+<input type=hidden name='436 금속원소와 그 화합물'>
+<input type=hidden name='437 유기화학'>
+<input type=hidden name='438 환상화합물'>
+<input type=hidden name='439 고분자화합물과 기타 유기물'>
+<input type=hidden name='440 천문학'>
+<input type=hidden name='441 이론천문학'>
+<input type=hidden name='442 실지천문학'>
+<input type=hidden name='443 기술천문학'>
+<input type=hidden name='444'>
+<input type=hidden name='445 지구'>
+<input type=hidden name='446 측지학'>
+<input type=hidden name='447 항해천문학'>
+<input type=hidden name='448 역법, 측시법'>
+<input type=hidden name='449 각국력'>
+<input type=hidden name='450 지학'>
+<input type=hidden name='451 지구물리학'>
+<input type=hidden name='452 지형학'>
+<input type=hidden name='453 기상학, 기후학'>
+<input type=hidden name='454 해양학'>
+<input type=hidden name='455 구조지질학'>
+<input type=hidden name='456 지사학'>
+<input type=hidden name='457 고생물학(화석학)'>
+<input type=hidden name='458 응용지질학 일반 및 광상학'>
+<input type=hidden name='459 암석학'>
+<input type=hidden name='460 광물학'>
+<input type=hidden name='461 원소광물'>
+<input type=hidden name='462 유화광물'>
+<input type=hidden name='463 할로겐화광물'>
+<input type=hidden name='464 산화광물'>
+<input type=hidden name='465 규산 및 규산염화물'>
+<input type=hidden name='466 기타 산화물을 포함한 광물'>
+<input type=hidden name='467 유기광물'>
+<input type=hidden name='468'>
+<input type=hidden name='469 결정학'>
+<input type=hidden name='470 생물과학'>
+<input type=hidden name='471 인류학(자연인류학)'>
+<input type=hidden name='472 생물학'>
+<input type=hidden name='473 생명론, 생물철학'>
+<input type=hidden name='474 세포학(세포생물학)'>
+<input type=hidden name='475 미생물학'>
+<input type=hidden name='476 생물진화'>
+<input type=hidden name='477 생물지리학'>
+<input type=hidden name='478 현미경 및 현미경검사법 일반'>
+<input type=hidden name='479 생물채집 및 보존'>
+<input type=hidden name='480 식물학'>
+<input type=hidden name='481 일반 식물학'>
+<input type=hidden name='482 은화식물'>
+<input type=hidden name='483 엽상식물'>
+<input type=hidden name='484 조균류'>
+<input type=hidden name='485 현화식물, 종자식물'>
+<input type=hidden name='486 나자식물'>
+<input type=hidden name='487 피자식물'>
+<input type=hidden name='488 단자엽식물'>
+<input type=hidden name='489 쌍자엽식물'>
+<input type=hidden name='490 동물학'>
+<input type=hidden name='491 일반 동물학'>
+<input type=hidden name='492 무척추동물'>
+<input type=hidden name='493 원생동물, 해면동물, 자포동물'>
+<input type=hidden name='494 연체동물, 의연체동물'>
+<input type=hidden name='495 절족동물, 곤충류'>
+<input type=hidden name='496 척추동물'>
+<input type=hidden name='497 어류, 양서류, 파충류'>
+<input type=hidden name='498 조류'>
+<input type=hidden name='499 포유류'>
+<input type=hidden name='500 기술과학'>
+<input type=hidden name='501 기술이론'>
+<input type=hidden name='502 잡(편람, 제표, 서지)'>
+<input type=hidden name='503 사전, 용어집'>
+<input type=hidden name='504 강연집, 수필집'>
+<input type=hidden name='505 연속간행물'>
+<input type=hidden name='506 학회, 단체, 기관, 회의'>
+<input type=hidden name='507 연구법 및 교육지도법'>
+<input type=hidden name='508 전집, 총서, 강좌'>
+<input type=hidden name='509 기술사'>
+<input type=hidden name='510 의학'>
+<input type=hidden name='511 기초의학'>
+<input type=hidden name='512 임상의학'>
+<input type=hidden name='513 내과학'>
+<input type=hidden name='514 외과'>
+<input type=hidden name='515 치과의학, 이비인후과학, 안과학'>
+<input type=hidden name='516 부인과, 산과학, 소아과학'>
+<input type=hidden name='517 위생학, 공공의학'>
+<input type=hidden name='518 약학'>
+<input type=hidden name='519 한의학(韓醫學, 漢醫學)'>
+<input type=hidden name='520 농업, 농학'>
+<input type=hidden name='521 농업기초학'>
+<input type=hidden name='522 농업경제'>
+<input type=hidden name='523 재배 및 보호'>
+<input type=hidden name='524 작물학'>
+<input type=hidden name='525 원예'>
+<input type=hidden name='526 임학, 입업'>
+<input type=hidden name='527 축산학'>
+<input type=hidden name='528 수의학'>
+<input type=hidden name='529 수산업, 생물자원의 보호, 수렵업'>
+<input type=hidden name='530 공학, 공업일반'>
+<input type=hidden name='531 토목공학'>
+<input type=hidden name='532 토목역학, 토목재료'>
+<input type=hidden name='533 측량'>
+<input type=hidden name='534 도로공학'>
+<input type=hidden name='535 철도공학'>
+<input type=hidden name='536 교량공학'>
+<input type=hidden name='537 수리공학'>
+<input type=hidden name='538 항만공학'>
+<input type=hidden name='539 위생, 도시, 환경공학'>
+<input type=hidden name='540 건축공학'>
+<input type=hidden name='541 건축재료'>
+<input type=hidden name='542 건축실무'>
+<input type=hidden name='543 건물구조의 유형'>
+<input type=hidden name='544 목구조'>
+<input type=hidden name='545 세부구조'>
+<input type=hidden name='546 건축설비, 연관 및 파이프의 부설'>
+<input type=hidden name='547 난방, 환기 및 공기조절공학'>
+<input type=hidden name='548 건축상의 세부 마무리손질'>
+<input type=hidden name='549 각종 건물'>
+<input type=hidden name='550 기계공학'>
+<input type=hidden name='551 기계역학, 재료 및 설계'>
+<input type=hidden name='552 공구와 제작'>
+<input type=hidden name='553 열공학과 원동기'>
+<input type=hidden name='554 유체공학, 기력학, 진공학'>
+<input type=hidden name='555 정밀기계'>
+<input type=hidden name='556 자동차공학'>
+<input type=hidden name='557 철도차량, 기관차'>
+<input type=hidden name='558 항공우주공학, 우주항법학'>
+<input type=hidden name='559 기타 공학'>
+<input type=hidden name='560 전기공학, 전자공학'>
+<input type=hidden name='561 전기회로, 계측, 재료'>
+<input type=hidden name='562 전기기계 및 기구'>
+<input type=hidden name='563 발전'>
+<input type=hidden name='564 송전, 배전'>
+<input type=hidden name='565 전등, 조명,'>
+<input type=hidden name='566 전산공학'>
+<input type=hidden name='567 전기통신'>
+<input type=hidden name='568 무선공학'>
+<input type=hidden name='569 전자공학'>
+<input type=hidden name='570 화학공학'>
+<input type=hidden name='571 공업화학약품'>
+<input type=hidden name='572 폭발물, 연료공업'>
+<input type=hidden name='573 음료기술'>
+<input type=hidden name='574 식품공학'>
+<input type=hidden name='575 초, 유지, 석유, 가스공학'>
+<input type=hidden name='576 요업 및 동계공업'>
+<input type=hidden name='577 세탁, 염색 및 동계공업'>
+<input type=hidden name='578 고분자화학공업'>
+<input type=hidden name='579 기타 유기공업'>
+<input type=hidden name='580 제조업'>
+<input type=hidden name='581 금속제조 및 가공업'>
+<input type=hidden name='582 철 및 강철제조'>
+<input type=hidden name='583 철기류 및 소규모철공'>
+<input type=hidden name='584 제재업, 목공업, 목제품'>
+<input type=hidden name='585 피혁 및 모피공업'>
+<input type=hidden name='586 펄프, 종이 및 동계공업'>
+<input type=hidden name='587 직물 및 섬유공업'>
+<input type=hidden name='588 의류제조'>
+<input type=hidden name='589 소형상품제조'>
+<input type=hidden name='590 가정학 및 가정생활'>
+<input type=hidden name='591 가정관리 및 가정생활'>
+<input type=hidden name='592 의복'>
+<input type=hidden name='593 몸치장(몸단장), 화장'>
+<input type=hidden name='594 식품과 식료'>
+<input type=hidden name='595 주택관리 및 가정설비'>
+<input type=hidden name='596 공동주거용 주택 시설관리'>
+<input type=hidden name='597 가정위생'>
+<input type=hidden name='598 육아'>
+<input type=hidden name='599'>
+<input type=hidden name='600 예술'>
+<input type=hidden name='601 미술이론, 미학'>
+<input type=hidden name='602 미술의 재료 및 기법'>
+<input type=hidden name='603 미술사전'>
+<input type=hidden name='604 미술의 주제'>
+<input type=hidden name='605 미술 연속간행물'>
+<input type=hidden name='606 미술 분야의 학회, 단체, 기관, 회의'>
+<input type=hidden name='607 미술의 지도법, 연구법 및 교육'>
+<input type=hidden name='608 미술전집, 총서'>
+<input type=hidden name='609 미술사'>
+<input type=hidden name='610 건축술'>
+<input type=hidden name='611 궁전, 묘사, 성곽'>
+<input type=hidden name='612 종교건물'>
+<input type=hidden name='613 공공건물'>
+<input type=hidden name='614 과학 및 연구용건물'>
+<input type=hidden name='615 공업용건물'>
+<input type=hidden name='616 상업, 교통, 통신용건물'>
+<input type=hidden name='617 주택건물'>
+<input type=hidden name='618 기타 건물'>
+<input type=hidden name='619 장식 및 의장'>
+<input type=hidden name='620 조각'>
+<input type=hidden name='621'>
+<input type=hidden name='622 조소재료 및 기법'>
+<input type=hidden name='623 목조'>
+<input type=hidden name='624 석조'>
+<input type=hidden name='625 금동조'>
+<input type=hidden name='626 점토조소, 소조'>
+<input type=hidden name='627 기타 재료'>
+<input type=hidden name='628 전각, 인장'>
+<input type=hidden name='629 제상'>
+<input type=hidden name='630 공예, 장식미술'>
+<input type=hidden name='631 도자공예, 유리공예'>
+<input type=hidden name='632 금속공예'>
+<input type=hidden name='633 보석, 갑각, 패류공예'>
+<input type=hidden name='634 목, 죽, 왕골공예'>
+<input type=hidden name='635 칠공예'>
+<input type=hidden name='636 염직물공예'>
+<input type=hidden name='637 고무, 플라스틱공예'>
+<input type=hidden name='638 미술가구'>
+<input type=hidden name='639 장식예술'>
+<input type=hidden name='640 서예'>
+<input type=hidden name='641 한자의 서체'>
+<input type=hidden name='642 한자서법'>
+<input type=hidden name='643 한글서법'>
+<input type=hidden name='644 기타 서법'>
+<input type=hidden name='645'>
+<input type=hidden name='646 펜습자'>
+<input type=hidden name='647 낙관, 수결(서명)'>
+<input type=hidden name='648 서보, 서첩, 법첩'>
+<input type=hidden name='649 문방구'>
+<input type=hidden name='650 회화, 도화'>
+<input type=hidden name='651 채색이론 및 실제'>
+<input type=hidden name='652 회화의 재료 및 방법'>
+<input type=hidden name='653 시대별 및 국별 회화'>
+<input type=hidden name='654 주제별 회화'>
+<input type=hidden name='655'>
+<input type=hidden name='656 소묘, 도화'>
+<input type=hidden name='657 만화, 삽화'>
+<input type=hidden name='658 그래픽디자인, 도안, 포스터'>
+<input type=hidden name='659 판화'>
+<input type=hidden name='660 사진술'>
+<input type=hidden name='661 사진기계, 재료'>
+<input type=hidden name='662 촬영기술'>
+<input type=hidden name='663 음화처리'>
+<input type=hidden name='664 양화처리(인화)'>
+<input type=hidden name='665'>
+<input type=hidden name='666 특수사진술'>
+<input type=hidden name='667 사진응용'>
+<input type=hidden name='668 사진집'>
+<input type=hidden name='669'>
+<input type=hidden name='670 음악'>
+<input type=hidden name='671 음악이론 및 기법'>
+<input type=hidden name='672 종교음악'>
+<input type=hidden name='673 성악'>
+<input type=hidden name='674 극음악, 오페라'>
+<input type=hidden name='675 기악합주'>
+<input type=hidden name='676 건반악기 및 타악기'>
+<input type=hidden name='677 현악기'>
+<input type=hidden name='678 취주악기'>
+<input type=hidden name='679 국악'>
+<input type=hidden name='680 연극'>
+<input type=hidden name='681 극장, 연출, 연기'>
+<input type=hidden name='682 가면극'>
+<input type=hidden name='683 인형극'>
+<input type=hidden name='684 각종 연극'>
+<input type=hidden name='685 무용, 발레'>
+<input type=hidden name='686 라디오극(방송극)'>
+<input type=hidden name='687 텔레비젼극'>
+<input type=hidden name='688 영화'>
+<input type=hidden name='689 대중연예'>
+<input type=hidden name='690 오락, 운동'>
+<input type=hidden name='691 오락'>
+<input type=hidden name='692 체육학, 스포츠'>
+<input type=hidden name='693 체조, 유희'>
+<input type=hidden name='694 육상경기'>
+<input type=hidden name='695 구기'>
+<input type=hidden name='696 수상경기, 공중경기'>
+<input type=hidden name='697 동계운동경기'>
+<input type=hidden name='698 무예 및 기타경기'>
+<input type=hidden name='699 기타 오락 및 레저스포츠'>
+<input type=hidden name='700 언어'>
+<input type=hidden name='701 언어학'>
+<input type=hidden name='702 잡저'>
+<input type=hidden name='703 사전'>
+<input type=hidden name='704 강연집'>
+<input type=hidden name='705 연속간행물'>
+<input type=hidden name='706 학회, 단체, 기관, 회의'>
+<input type=hidden name='707 지도법, 연구법 및 교육, 교육재료'>
+<input type=hidden name='708 전집, 총서'>
+<input type=hidden name='709 언어사'>
+<input type=hidden name='710 한국어'>
+<input type=hidden name='711 음운, 음성, 문자'>
+<input type=hidden name='712 어원, 어의'>
+<input type=hidden name='713 사전'>
+<input type=hidden name='714 어휘'>
+<input type=hidden name='715 문법'>
+<input type=hidden name='716 작문'>
+<input type=hidden name='717 독본, 해석, 회화'>
+<input type=hidden name='718 고어, 방언, 속어'>
+<input type=hidden name='719'>
+<input type=hidden name='720 중국어'>
+<input type=hidden name='721 음운, 음성, 문자'>
+<input type=hidden name='722 어원, 어의'>
+<input type=hidden name='723 사전'>
+<input type=hidden name='724 어휘'>
+<input type=hidden name='725 문법, 어법'>
+<input type=hidden name='726 작문'>
+<input type=hidden name='727 독본, 해석, 회화'>
+<input type=hidden name='728 고어, 방언, 이어(속어)'>
+<input type=hidden name='729'>
+<input type=hidden name='730 일본어'>
+<input type=hidden name='731 음운, 음성, 문자'>
+<input type=hidden name='732 어원, 어의'>
+<input type=hidden name='733 사전'>
+<input type=hidden name='734 어휘'>
+<input type=hidden name='735 문법, 어법'>
+<input type=hidden name='736 작문'>
+<input type=hidden name='737 독본, 해석, 회화'>
+<input type=hidden name='738 고어, 방언'>
+<input type=hidden name='739 기타 아시아 제어'>
+<input type=hidden name='740 영어'>
+<input type=hidden name='741 음운, 음성, 문자'>
+<input type=hidden name='742 어원, 어의'>
+<input type=hidden name='743 사전'>
+<input type=hidden name='744 어휘'>
+<input type=hidden name='745 문법'>
+<input type=hidden name='746 작문'>
+<input type=hidden name='747 독본, 해석, 회화'>
+<input type=hidden name='748 고어, 방언, 속어'>
+<input type=hidden name='749 앵글로색슨어'>
+<input type=hidden name='750 독일어'>
+<input type=hidden name='751 음운, 음성, 문자'>
+<input type=hidden name='752 어원, 어의'>
+<input type=hidden name='753 사전'>
+<input type=hidden name='754 어휘'>
+<input type=hidden name='755 문법'>
+<input type=hidden name='756 작문'>
+<input type=hidden name='757 독본, 해석, 회화'>
+<input type=hidden name='758 고어, 방언, 속어'>
+<input type=hidden name='759 기타 게르만어'>
+<input type=hidden name='760 프랑스어'>
+<input type=hidden name='761 음운, 음성, 문자'>
+<input type=hidden name='762 어원, 어의'>
+<input type=hidden name='763 사전'>
+<input type=hidden name='764 어휘'>
+<input type=hidden name='765 문법'>
+<input type=hidden name='766 작문'>
+<input type=hidden name='767 독본, 해석, 회화'>
+<input type=hidden name='768 고어, 방언, 속어'>
+<input type=hidden name='769 프로방스어'>
+<input type=hidden name='770 스페인어'>
+<input type=hidden name='771 음운, 음성, 문자'>
+<input type=hidden name='772 어원, 어의'>
+<input type=hidden name='773 사전'>
+<input type=hidden name='774 어휘'>
+<input type=hidden name='775 문법'>
+<input type=hidden name='776 작문'>
+<input type=hidden name='777 독본, 해석, 회화'>
+<input type=hidden name='778 고어, 방언, 속어'>
+<input type=hidden name='779 포르투갈어'>
+<input type=hidden name='780 이탈리아어'>
+<input type=hidden name='781 음운, 음성, 문자'>
+<input type=hidden name='782 어원, 어의'>
+<input type=hidden name='783 사전'>
+<input type=hidden name='784 어휘'>
+<input type=hidden name='785 문법'>
+<input type=hidden name='786 작문'>
+<input type=hidden name='787 독본, 해석, 회화'>
+<input type=hidden name='788 고어, 방언, 속어'>
+<input type=hidden name='789 루마니아어'>
+<input type=hidden name='790 기타 제어'>
+<input type=hidden name='791'>
+<input type=hidden name='792 인도-유럽계어'>
+<input type=hidden name='793 아프리카제어'>
+<input type=hidden name='794 북아메리카인디안어'>
+<input type=hidden name='795 남아메리카인디안어'>
+<input type=hidden name='796 오스트로네시아어'>
+<input type=hidden name='797 셈족어'>
+<input type=hidden name='798 햄족어'>
+<input type=hidden name='799 국제어(인공어) 및 기타 언어'>
+<input type=hidden name='800 문학'>
+<input type=hidden name='801 문학이론'>
+<input type=hidden name='802 문장작법, 수사학'>
+<input type=hidden name='803 辭典, 事典'>
+<input type=hidden name='804 강연집, 수필'>
+<input type=hidden name='805 연속간행물'>
+<input type=hidden name='806 학회, 단체, 기관, 회의'>
+<input type=hidden name='807 지도법 및 연구법, 교육, 교육자료'>
+<input type=hidden name='808 전집, 총서'>
+<input type=hidden name='809 문학사, 평론'>
+<input type=hidden name='810 한국문학'>
+<input type=hidden name='811 시'>
+<input type=hidden name='812 희곡'>
+<input type=hidden name='813 소설'>
+<input type=hidden name='814 수필'>
+<input type=hidden name='815 연설, 웅변'>
+<input type=hidden name='816 일기, 서간, 기행'>
+<input type=hidden name='817 풍자'>
+<input type=hidden name='818 르포르타주 및 기타'>
+<input type=hidden name='819'>
+<input type=hidden name='820 중국문학'>
+<input type=hidden name='821 시'>
+<input type=hidden name='822 희곡'>
+<input type=hidden name='823 소설'>
+<input type=hidden name='824 수필'>
+<input type=hidden name='825 연설, 웅변'>
+<input type=hidden name='826 일기, 서간, 기행'>
+<input type=hidden name='827 풍자'>
+<input type=hidden name='828 르포르타주 및 기타'>
+<input type=hidden name='829'>
+<input type=hidden name='830 일본문학'>
+<input type=hidden name='831 시'>
+<input type=hidden name='832 희곡'>
+<input type=hidden name='833 소설'>
+<input type=hidden name='834 수필'>
+<input type=hidden name='835 연설, 웅변'>
+<input type=hidden name='836 일기, 서간, 기행'>
+<input type=hidden name='837 풍자'>
+<input type=hidden name='838 르포르타주 및 기타'>
+<input type=hidden name='839 기타 아시아 제문학'>
+<input type=hidden name='840 영미문학'>
+<input type=hidden name='841 시'>
+<input type=hidden name='842 희곡'>
+<input type=hidden name='843 소설'>
+<input type=hidden name='844 수필'>
+<input type=hidden name='845 연설, 웅변'>
+<input type=hidden name='846 일기, 서간, 기행'>
+<input type=hidden name='847 풍자'>
+<input type=hidden name='848 르포르타주 및 기타'>
+<input type=hidden name='849 앵글로색슨문학'>
+<input type=hidden name='850 독일문학'>
+<input type=hidden name='851 시'>
+<input type=hidden name='852 희곡'>
+<input type=hidden name='853 소설'>
+<input type=hidden name='854 수필'>
+<input type=hidden name='855 연설, 웅변'>
+<input type=hidden name='856 일기, 서간, 기행'>
+<input type=hidden name='857 풍자'>
+<input type=hidden name='858 르포르타주 및 기타'>
+<input type=hidden name='859 기타 게르만 문학'>
+<input type=hidden name='860 프랑스문학'>
+<input type=hidden name='861 시'>
+<input type=hidden name='862 희곡'>
+<input type=hidden name='863 소설'>
+<input type=hidden name='864 수필'>
+<input type=hidden name='865 연설, 웅변'>
+<input type=hidden name='866 일기, 서간, 기행'>
+<input type=hidden name='867 풍자'>
+<input type=hidden name='868 르포르타주 및 기타'>
+<input type=hidden name='869 프로방스문학'>
+<input type=hidden name='870 스페인문학'>
+<input type=hidden name='871 시'>
+<input type=hidden name='872 희곡'>
+<input type=hidden name='873 소설'>
+<input type=hidden name='874 수필'>
+<input type=hidden name='875 연설, 웅변'>
+<input type=hidden name='876 일기, 서간, 기행'>
+<input type=hidden name='877 풍자'>
+<input type=hidden name='878 르포르타주 및 기타'>
+<input type=hidden name='879 포르투갈문학'>
+<input type=hidden name='880 이탈리아문학'>
+<input type=hidden name='881 시'>
+<input type=hidden name='882 희곡'>
+<input type=hidden name='883 소설'>
+<input type=hidden name='884 수필'>
+<input type=hidden name='885 연설, 웅변'>
+<input type=hidden name='886 일기, 서간, 기행'>
+<input type=hidden name='887 풍자'>
+<input type=hidden name='888 르포르타주 및 기타'>
+<input type=hidden name='889 루마니아문학'>
+<input type=hidden name='890 기타 제문학'>
+<input type=hidden name='891'>
+<input type=hidden name='892 인도-유럽계문학'>
+<input type=hidden name='893 아프리카제문학'>
+<input type=hidden name='894 북아메리카 인디안문학'>
+<input type=hidden name='895 남아메리카 인디안문학'>
+<input type=hidden name='896 오스트로네시아문학'>
+<input type=hidden name='897 셈족문학'>
+<input type=hidden name='898 햄족문학'>
+<input type=hidden name='899 기타 제문학'>
+<input type=hidden name='900 역사'>
+<input type=hidden name='901 역사철학 및 이론'>
+<input type=hidden name='902 역사보조학'>
+<input type=hidden name='903 辭典, 事典'>
+<input type=hidden name='904 강연집, 사평'>
+<input type=hidden name='905 연속간행물'>
+<input type=hidden name='906 학회, 단체, 기관, 회의'>
+<input type=hidden name='907 지도법, 연구법 및 교육, 교육자료'>
+<input type=hidden name='908 전집, 총서'>
+<input type=hidden name='909 세계사, 세계문화사'>
+<input type=hidden name='910 아시아(아세아)'>
+<input type=hidden name='911 한국'>
+<input type=hidden name='912 중국'>
+<input type=hidden name='913 일본'>
+<input type=hidden name='914 동남아시아'>
+<input type=hidden name='915 인도)'>
+<input type=hidden name='916 중앙아시아'>
+<input type=hidden name='917 시베리아'>
+<input type=hidden name='918'>
+<input type=hidden name='919 아라비아반도'>
+<input type=hidden name='920 유럽(구라파)'>
+<input type=hidden name='921 고대그리스'>
+<input type=hidden name='922 로마'>
+<input type=hidden name='923 스칸디나비아지방'>
+<input type=hidden name='924 영국'>
+<input type=hidden name='925 독일'>
+<input type=hidden name='926 프랑스'>
+<input type=hidden name='927 스페인'>
+<input type=hidden name='928 이탈리아'>
+<input type=hidden name='929 러시아'>
+<input type=hidden name='930 아프리카'>
+<input type=hidden name='931 북아프리카'>
+<input type=hidden name='932 이집트'>
+<input type=hidden name='933 바바리제국'>
+<input type=hidden name='934 서아프리카'>
+<input type=hidden name='935'>
+<input type=hidden name='936 중아프리카'>
+<input type=hidden name='937 동아프리카'>
+<input type=hidden name='938 남아프리카'>
+<input type=hidden name='939 남인도양제도'>
+<input type=hidden name='940 북아메리카(북미)'>
+<input type=hidden name='941 캐나다'>
+<input type=hidden name='942 미국'>
+<input type=hidden name='943 멕시코'>
+<input type=hidden name='944 중앙아메리카'>
+<input type=hidden name='945 과테말라'>
+<input type=hidden name='946 온두라스'>
+<input type=hidden name='947 니카라과'>
+<input type=hidden name='948 코스타리카'>
+<input type=hidden name='949 서인도제도'>
+<input type=hidden name='950 남아메리카(남미)'>
+<input type=hidden name='951 콜럼비아'>
+<input type=hidden name='952 베네수엘라, 기아나'>
+<input type=hidden name='953 브라질, 우루과이'>
+<input type=hidden name='954 에콰도르'>
+<input type=hidden name='955 페루'>
+<input type=hidden name='956 볼리비아'>
+<input type=hidden name='957 파라과이'>
+<input type=hidden name='958 아르헨티나'>
+<input type=hidden name='959 칠레'>
+<input type=hidden name='960 오세아니아(대양주)'>
+<input type=hidden name='961'>
+<input type=hidden name='962 오스트레일리아'>
+<input type=hidden name='963 뉴질랜드'>
+<input type=hidden name='964 파푸아뉴기니'>
+<input type=hidden name='965 멜라네시아'>
+<input type=hidden name='966 미크로네시아'>
+<input type=hidden name='967 폴리네시아'>
+<input type=hidden name='968 하와이제도'>
+<input type=hidden name='969 태평양제도'>
+<input type=hidden name='970 양극지방'>
+<input type=hidden name='971 북극지방'>
+<input type=hidden name='972'>
+<input type=hidden name='973 그린란드'>
+<input type=hidden name='974'>
+<input type=hidden name='975'>
+<input type=hidden name='976'>
+<input type=hidden name='977'>
+<input type=hidden name='978'>
+<input type=hidden name='979 남극지방'>
+<input type=hidden name='980 지리'>
+<input type=hidden name='981 아시아지리'>
+<input type=hidden name='982 유럽지리'>
+<input type=hidden name='983 아프리카지리'>
+<input type=hidden name='984 북아메리카지리'>
+<input type=hidden name='985 남아메리카지리'>
+<input type=hidden name='986 오세아니아지리'>
+<input type=hidden name='987 양극지리'>
+<input type=hidden name='988 해양'>
+<input type=hidden name='989 지도 및 지도책'>
+<input type=hidden name='990 전기'>
+<input type=hidden name='991 아시아'>
+<input type=hidden name='992 유럽'>
+<input type=hidden name='993 아프리카'>
+<input type=hidden name='994 북아메리카'>
+<input type=hidden name='995 남아메리카'>
+<input type=hidden name='996 오세아니아'>
+<input type=hidden name='997 양극'>
+<input type=hidden name='998 주제별전기'>
+<input type=hidden name='999 계보, 족보'>
