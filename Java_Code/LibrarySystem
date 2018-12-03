@@ -1,0 +1,129 @@
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.TreeSet;
+
+import javax.jws.soap.SOAPBinding;
+
+public class LibrarySystem {
+	private String name;
+	private HashSet<Borrower> borrower = new HashSet<Borrower>();
+	private TreeSet<Book> book = new TreeSet<Book>(new Comp());
+	
+	public LibrarySystem(String name){
+		this.name = name;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public HashSet<Borrower> getborrower() {
+		return borrower;
+	}
+	public void setborrower(HashSet<Borrower> borrower) {
+		this.borrower = borrower;
+	}
+	public TreeSet<Book> getbook() {
+		return book;
+	}
+	public void setbook(TreeSet<Book> book) {
+		this.book = book;
+	}
+	
+	public Book findBook(int catalogNumber) {
+		for (Book ob : book) {
+		    if (ob.getCatalogueNumber() == catalogNumber) {
+		      return ob;
+		    }
+		  } 
+		return null;
+	}
+	public Borrower findBorrower(String name){
+		for (Borrower ob : borrower) {
+		    if (ob.getName().equals(name)) {
+		      return ob;
+		    }
+		  } 
+		return null;
+	}
+	
+	public void registerOneBorrower(String borrowerInformation){
+		if(findBorrower(borrowerInformation) == null){
+			borrower.add(new Borrower(borrowerInformation));
+			System.out.println("등록되었습니다..");
+		}
+		else{
+			System.out.println("이미 등록되어있는 사용자 이름입니다.");
+		}
+	}
+	public void addOneBook(String title,String[] author,int catalogNumber){
+		if(findBook(catalogNumber) == null){
+			book.add(new Book(title, author, catalogNumber));
+			System.out.println("등록되었습니다..");
+		}
+		else{
+			System.out.println("이미 등록되어있는 catalogNumber입니다.");
+		}
+	}
+	
+	public void lendOneBook(String name, int catalogNumber){
+		Borrower borrower_ = findBorrower(name);
+		if(borrower_ != null){
+			if(borrower_.getBook() == null){
+				Book book_ = findBook(catalogNumber);
+				if(book_ != null){
+					book_.detachBorrower();
+				}
+				book_.attachBorrower(borrower_);
+				borrower_.attachBook(book_);
+			}
+			else{
+				System.out.println(borrower_.getBook().getTitle() + "책을 먼저 반납해주세요.");
+			}
+		}
+		else{
+			System.out.println("등록되지 않은 사용자입니다.");
+//					+ "\n새로 등록하시겠습니까? (Y/N)");
+//			Scanner scan = new Scanner(System.in);
+//			String choice = scan.next();
+		
+		}
+	}
+	public void returnOneBook(int catalogNumber){
+		Book book_ = findBook(catalogNumber);
+		Borrower borrower_ = book_.getBorrower();
+		if(borrower_ == null){
+			System.out.println("이미 반납되어있는 책입니다.");
+		}
+		else{
+			book_.detachBorrower();
+			borrower_.detachBook();
+			System.out.println("반납 처리 되었습니다.");
+		}
+	}
+	public void displaybooksAvailableForLoan(){
+		System.out.println("1. 책의 이름, 2. 책의 저자, 3.책의 고유번호");
+		for (Book ob : book) {
+		    if (ob.getBorrower() == null) {
+			      System.out.print("1." + ob.getTitle() + "  2.");
+			      for(String name : ob.getAuthor())
+			    	  System.out.print(name + " ");
+			      System.out.print("3." + ob.getCatalogueNumber() + "\n");
+		    }
+		  }
+	}
+	public void displaybooksOnLoan(){
+		System.out.println("1. 책의 이름, 2. 책의 저자, 3.책의 고유번호");
+		for (Book ob : book) {
+		    if (ob.getBorrower() != null) {
+		      System.out.print("1." + ob.getTitle() + "  2.");
+		      for(String name : ob.getAuthor())
+		    	  System.out.print(name + " ");
+		      System.out.print("3." + ob.getCatalogueNumber() + "\n");
+		    }
+		  }
+	}
+	
+}
