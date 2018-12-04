@@ -1,0 +1,16 @@
+import javax.swing.JFrame;
+
+public class MyFrame extends JFrame
+{
+	
+	public MyFrame()
+	{
+		this.setTitle("소분설 프로젝트");
+		this.setSize(220, 250);
+		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		this.add(new MyMainPanel());
+		
+		this.setVisible(true);
+	}
+}
