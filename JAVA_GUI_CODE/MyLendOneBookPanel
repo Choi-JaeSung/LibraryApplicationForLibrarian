@@ -1,0 +1,84 @@
+
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextPane;
+
+public class MyLendOneBookPanel extends JPanel
+{
+	public MyLendOneBookPanel(JFrame newFrame)
+	{
+		this.setSize(400, 430);
+		
+		JLabel mainLabel = new JLabel("1팀 도서관 대출 페이지 입니다.");
+		Font myFont = new Font("Serif",Font.BOLD,20);
+		mainLabel.setFont(myFont);
+		
+		
+		JTextPane borrowerTextPane = new JTextPane();
+		borrowerTextPane.setText("대출자의 이름을 입력하세요.");
+		borrowerTextPane.setPreferredSize(new Dimension(350, 50));
+		borrowerTextPane.setFont(myFont);
+		borrowerTextPane.addMouseListener(new MouseAdapter()
+		{
+			@Override
+			public void mouseClicked(MouseEvent e)
+			{
+				borrowerTextPane.setText("");
+			}
+		});
+		
+		JTextPane bookTextPane = new JTextPane();
+		bookTextPane.setText("대출을 원하는 책을 입력하세요.");
+		bookTextPane.setPreferredSize(new Dimension(350, 50));
+		bookTextPane.setFont(myFont);
+		bookTextPane.addMouseListener(new MouseAdapter()
+		{
+			@Override
+			public void mouseClicked(MouseEvent e)
+			{
+				bookTextPane.setText("");
+			}
+		});
+		
+		JButton okeyBtn = new JButton("확인");
+		okeyBtn.addActionListener(new ActionListener()
+		{
+			
+			@Override
+			public void actionPerformed(ActionEvent e)
+			{
+				newFrame.dispose();
+			}
+		});
+		
+		
+		JButton cancleBtn = new JButton("취소");
+		cancleBtn.addActionListener(new ActionListener()
+		{
+			
+			@Override
+			public void actionPerformed(ActionEvent e)
+			{
+				newFrame.dispose();
+			}
+		});
+		
+		this.add(mainLabel);
+		this.add(borrowerTextPane);
+		this.add(bookTextPane);
+		this.add(okeyBtn);
+		this.add(cancleBtn);
+	
+	}
+
+	
+}
