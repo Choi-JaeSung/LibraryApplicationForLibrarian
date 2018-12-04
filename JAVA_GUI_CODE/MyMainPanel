@@ -1,0 +1,40 @@
+
+import java.awt.GridLayout;
+
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class MyMainPanel extends JPanel
+{
+	public MyMainPanel()
+	{
+		
+		this.setSize(220, 250);
+		
+		JLabel mainLabel = new JLabel("1팀 도서관에 오신 것을 환영합니다.");
+		
+		JButton registerOneBorrowerBtn = new JButton("사용자 등록");
+		registerOneBorrowerBtn.setSize(220, 50);
+		JButton addOneBookBtn = new JButton("책 등록");
+		addOneBookBtn.setSize(220, 50);
+		JButton displayBooksAvailableForLoanBtn = new JButton("대출 가능한 책 목록");
+		displayBooksAvailableForLoanBtn.setSize(220, 50);
+		JButton displayBooksOnLoanBtn = new JButton("대출 중인 책 목록");
+		displayBooksOnLoanBtn.setSize(220, 50);
+		JButton lendOneBookBtn = new JButton("대출");
+		lendOneBookBtn.setSize(220, 50);
+		JButton returnOneBookBtn = new JButton("반납");
+		returnOneBookBtn.setSize(220, 50);
+		
+		this.add(mainLabel);
+		
+		this.add(registerOneBorrowerBtn);
+		this.add(addOneBookBtn);
+		this.add(displayBooksAvailableForLoanBtn);
+		this.add(displayBooksOnLoanBtn);
+		this.add(lendOneBookBtn);
+		this.add(returnOneBookBtn);
+		
+	}
+}
