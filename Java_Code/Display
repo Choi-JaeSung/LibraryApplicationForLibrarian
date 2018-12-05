@@ -1,0 +1,37 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+
+/**
+ * 
+ * @Author ()
+ * @Version ()
+ */
+public class Display implements ActionListener {
+	boolean loan;
+	
+	public Display(boolean loan) {
+		this.loan = loan;
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		if(loan == true) {
+			JFrame frame = new JFrame();
+			frame.setTitle("DisplayBooksAvailableForLoanBtn");
+			frame.setSize(250, 390);
+			DisplayBooks display = new DisplayBooks(true);
+			frame.add(display);
+			frame.setVisible(true);
+		}else {
+			JFrame frame = new JFrame();
+			frame.setTitle("DisplayBooksOnLoanBtn");
+			frame.setSize(250, 390);
+			DisplayBooks display = new DisplayBooks(false);
+			frame.add(display);
+			frame.setVisible(true);
+		}
+	}
+
+}
