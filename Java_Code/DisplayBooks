@@ -1,0 +1,63 @@
+import java.awt.Font;
+
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+
+/**
+ * 
+ * @Author ()
+ * @Version ()
+ */
+public class DisplayBooks extends JPanel {
+	JTextArea text;
+	JScrollPane sp;
+	JLabel title;
+	
+	public DisplayBooks(boolean loan) {
+		this.setLayout(null);
+		this.setSize(250, 300);
+		
+		if(loan == true) {
+			DisplayBooksAvailableForLoan();
+		}else {
+			DisplayBooksOnLoan();
+		}
+		
+	}
+	
+	public void DisplayBooksAvailableForLoan() {
+		title = new JLabel("대출 가능한 책들");
+		title.setBounds(40, 25, 300, 50);
+		title.setFont(new Font("malgun gothic", Font.BOLD, 20));
+		this.add(title);
+		
+		text = new JTextArea();
+		text.setEditable(false);
+		text.append("대출 가능한 책");
+		
+		sp = new JScrollPane(text);
+		sp.setBounds(0, 100, 235, 250);
+		sp.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+		sp.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+		this.add(sp);
+	}
+	
+	public void DisplayBooksOnLoan() {
+		title = new JLabel("대출 중인 책들");
+		title.setBounds(50, 25, 300, 50);
+		title.setFont(new Font("malgun gothic", Font.BOLD, 20));
+		this.add(title);
+		
+		text = new JTextArea();
+		text.setEditable(false);
+		text.append("대출 중인 책");
+		
+		sp = new JScrollPane(text);
+		sp.setBounds(0, 100, 230, 250);
+		sp.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+		sp.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+		this.add(sp);
+	}
+}
