@@ -10,7 +10,7 @@ import javax.swing.JTextArea;
  * @Author ()
  * @Version ()
  */
-public class DisplayBooks extends JPanel {
+public class MyDisplayBooksPanel extends JPanel {
 	JTextArea text;
 	JScrollPane sp;
 	JLabel title;
