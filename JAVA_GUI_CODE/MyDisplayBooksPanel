@@ -1,3 +1,5 @@
+package GUI;
+
 import java.awt.Font;
 
 import javax.swing.JLabel;
@@ -15,7 +17,7 @@ public class MyDisplayBooksPanel extends JPanel {
 	JScrollPane sp;
 	JLabel title;
 	
-	public DisplayBooks(boolean loan) {
+	public MyDisplayBooksPanel(boolean loan) {
 		this.setLayout(null);
 		this.setSize(250, 300);
 		
