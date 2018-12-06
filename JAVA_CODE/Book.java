@@ -1,0 +1,59 @@
+package Process;
+
+public class Book{
+	private int catalogNumber;
+	private String[] author;
+	private String title;
+	private Borrower borrower;
+	private String rentalDate;
+	private String returnDate;
+	
+	public Book(String title, String[] author, int catalogueNumber){
+		this.title = title;
+		this.author = author;
+		this.catalogNumber = catalogueNumber;
+	}
+
+	public int getCatalogueNumber() {
+		return catalogNumber;
+	}
+	public String[] getAuthor() {
+		return author;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setCatalogueNumber(int catalogueNumber) {
+		this.catalogNumber = catalogueNumber;
+	}
+	public void setAuthor(String[] author) {
+		this.author = author;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public Borrower getBorrower() {
+		return borrower;
+	}
+	public void setBorrower(Borrower borrower) {
+		this.borrower = borrower;
+	}
+	public void detachBorrower(){
+		borrower = null;
+	}
+	public void attachBorrower(Borrower borrower){
+		this.borrower = borrower;
+	}
+	public String getRentalDate() {
+		return rentalDate;
+	}
+	public void setRentalDate(String rentalDate) {
+		this.rentalDate = rentalDate;
+	}
+	public String getReturnDate() {
+		return returnDate;
+	}
+	public void setReturnDate(String returnDate) {
+		this.returnDate = returnDate;
+	}
+}
