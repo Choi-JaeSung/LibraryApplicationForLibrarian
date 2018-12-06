@@ -1,0 +1,77 @@
+public static void OpenLibrary(){
+Scanner scan = new Scanner(System.in);
+LibrarySystem library = new LibrarySystem("First Library");
+library.loadFile();
+int choice = 0;
+while(true){
+ System.out.println("...<<" + library.getName() + ">>");
+ System.out.println("...(1.registerOneBorrower)");
+ System.out.println("...(2.addOneBook)");
+ System.out.println("...(3.displayBooksAvailableForLoan)");
+ System.out.println("...(4.displayBooksOnLoan)");
+ System.out.println("...(5.lendOneBook)");
+ System.out.println("...(6.returnOneBook)");
+ System.out.println("...(7.Exit)");
+ 
+ System.out.print("What are you going to do? : ");
+ try{
+    choice = scan.nextInt();
+ }catch(InputMismatchException e){
+    System.out.println("\ninput Error!! Please re-enter.\n");
+    scan.next();
+ }
+ if(choice == 1){
+    System.out.print("Input borrowerName : ");
+    String borrowerInformation = scan.next();
+    library.registerOneBorrower(borrowerInformation);
+ }    
+ else if(choice == 2){
+    System.out.println("<Input bookProperty>");
+    System.out.print("Input bookTitle : ");
+    String bookTitle = scan.next();
+    System.out.print("Input bookAuthor(divide by comma) : ");
+    String bookAuthor = scan.next();
+    String[] bookAuthor_ = bookAuthor.split(",");
+    System.out.print("Input bookCatalogNumber : ");
+    try{
+       int catalogNumber = scan.nextInt();
+       library.addOneBook(bookTitle, bookAuthor_, catalogNumber);
+    }catch(InputMismatchException e){
+       System.out.println("\ninput Error!! Please re-enter.\n");
+       scan.next();
+    }
+ }
+ else if(choice == 3){
+    library.displaybooksAvailableForLoan();
+ }
+ else if(choice == 4){
+    library.displaybooksOnLoan();
+ }
+ else if(choice == 5){
+    System.out.print("Input borrowerName : ");
+    String borrowerName = scan.next();
+    System.out.print("Input bookCatalogNumber : ");
+    try{
+       int catalogNumber = scan.nextInt();
+       library.lendOneBook(borrowerName, catalogNumber);
+    }catch(InputMismatchException e){
+       System.out.println("\ninput Error!! Please re-enter.\n");
+       scan.next();
+    }
+ }
+ else if(choice == 6){
+    System.out.print("Input bookCatalogNumber : ");
+    try{
+       int catalogNumber = scan.nextInt();
+       library.returnOneBook(catalogNumber);
+    }catch(InputMismatchException e){
+       System.out.println("\ninput Error!! Please re-enter.\n");
+       scan.next();
+    }
+ }
+ else if(choice == 7){
+    library.saveFile();
+    break;
+ }
+}
+}
