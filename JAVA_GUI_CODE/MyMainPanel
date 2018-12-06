@@ -1,0 +1,127 @@
+
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class MyMainPanel extends JPanel
+{
+	JFrame newFrame;
+	public MyMainPanel(LibrarySystem ourLib)
+	{
+		
+		this.setSize(400, 430);
+		
+		JLabel mainLabel = new JLabel("1팀 도서관에 오신 것을 환영합니다.");
+		Font myFont = new Font("Serif",Font.BOLD,20);
+		mainLabel.setFont(myFont);
+		
+		this.add(mainLabel);
+		
+		
+		JButton registerOneBorrowerBtn = new JButton("사용자 등록");
+		registerOneBorrowerBtn.setPreferredSize(new Dimension(220, 50));
+		JButton addOneBookBtn = new JButton("책 등록");
+		addOneBookBtn.setPreferredSize(new Dimension(220, 50));
+		JButton displayBooksAvailableForLoanBtn = new JButton("대출 가능한 책 목록");
+		displayBooksAvailableForLoanBtn.setPreferredSize(new Dimension(220, 50));
+		JButton displayBooksOnLoanBtn = new JButton("대출 중인 책 목록");
+		displayBooksOnLoanBtn.setPreferredSize(new Dimension(220, 50));
+		JButton lendOneBookBtn = new JButton("대출");
+		lendOneBookBtn.setPreferredSize(new Dimension(220, 50));
+		JButton returnOneBookBtn = new JButton("반납");
+		returnOneBookBtn.setPreferredSize(new Dimension(220, 50));
+		
+		this.add(registerOneBorrowerBtn);
+		this.add(addOneBookBtn);
+		this.add(displayBooksAvailableForLoanBtn);
+		this.add(displayBooksOnLoanBtn);
+		this.add(lendOneBookBtn);
+		this.add(returnOneBookBtn);
+		
+		registerOneBorrowerBtn.addActionListener(new ActionListener()
+		{			
+			@Override
+			public void actionPerformed(ActionEvent e)
+			{
+				newFrame = new JFrame("사용자 등록");
+				newFrame.setSize(400, 430);
+				newFrame.add(new MyRegisterOneBorrowerPanel(newFrame, ourLib));
+				
+				newFrame.setVisible(true);
+			}
+		});
+		
+		addOneBookBtn.addActionListener(new ActionListener()
+		{			
+			@Override
+			public void actionPerformed(ActionEvent e)
+			{
+				newFrame = new JFrame("책 등록");
+				newFrame.setSize(400, 430);
+				newFrame.add(new MyAddOneBookPanel(newFrame, ourLib));
+				
+				newFrame.setVisible(true);
+			}
+		});
+		
+		displayBooksAvailableForLoanBtn.addActionListener(new ActionListener()
+		{			
+			@Override
+			public void actionPerformed(ActionEvent e)
+			{
+				newFrame = new JFrame("대출 가능한 책 목록");
+				newFrame.setSize(400, 430);
+				newFrame.add(new MyDisplayBooksAvailableForLoanPanel(newFrame, ourLib));
+				
+				newFrame.setVisible(true);
+			}
+		});
+		
+		displayBooksOnLoanBtn.addActionListener(new ActionListener()
+		{			
+			@Override
+			public void actionPerformed(ActionEvent e)
+			{
+				newFrame = new JFrame("대출 중인 책 목록");
+				newFrame.setSize(400, 430);
+				newFrame.add(new MyDisplayBooksOnLoanPanel(newFrame, ourLib));
+				
+				newFrame.setVisible(true);
+			}
+		});
+		
+		lendOneBookBtn.addActionListener(new ActionListener()
+		{			
+			@Override
+			public void actionPerformed(ActionEvent e)
+			{
+				newFrame = new JFrame("대출");
+				newFrame.setSize(400, 430);
+				newFrame.add(new MyLendOneBookPanel(newFrame, ourLib));
+				
+				newFrame.setVisible(true);
+			}
+		});
+		
+		returnOneBookBtn.addActionListener(new ActionListener()
+		{			
+			@Override
+			public void actionPerformed(ActionEvent e)
+			{
+				newFrame = new JFrame("반납");
+				newFrame.setSize(400, 430);
+				newFrame.add(new MyReturnOneBookPanel(newFrame, ourLib));
+				
+				newFrame.setVisible(true);
+			}
+		});
+		
+	
+	}
+}
