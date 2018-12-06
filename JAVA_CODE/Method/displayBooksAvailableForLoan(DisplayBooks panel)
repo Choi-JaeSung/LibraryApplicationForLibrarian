@@ -1,0 +1,16 @@
+	public void displayBooksAvailableForLoan(DisplayBooks panel) {
+		String display = null;
+		for (Book ob : books) {
+			if (ob.getBorrower() == null) {
+				display = ob.getTitle() + " | ";
+				for (int i = 0; i < ob.getAuthor().length; i++) {
+					display += ob.getAuthor()[i];
+					if (i != ob.getAuthor().length - 1) {
+						display += ", ";
+					}
+				}
+				display += " | " + ob.getCatalogueNumber();
+			}
+		}
+		panel.text.append(display);
+	}
