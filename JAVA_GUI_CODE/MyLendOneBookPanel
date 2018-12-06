@@ -1,3 +1,4 @@
+
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
@@ -11,6 +12,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextPane;
 
+import Process.LibrarySystem;
+
 public class MyLendOneBookPanel extends JPanel
 {
 	public MyLendOneBookPanel(JFrame newFrame, LibrarySystem ourLib)
@@ -21,8 +24,16 @@ public class MyLendOneBookPanel extends JPanel
 		Font myFont = new Font("Serif", Font.BOLD, 20);
 		mainLabel.setFont(myFont);
 
+		
+		JLabel blank = new JLabel("대출자의 이름을 입력하세요.");
+		blank.setPreferredSize(new Dimension(0, 50));
+		
+		JLabel borrowerTextLabel = new JLabel("대출자의 이름을 입력하세요.");
+		borrowerTextLabel.setFont(new Font("Serif", Font.BOLD, 15));
+		borrowerTextLabel.setAlignmentY(BOTTOM_ALIGNMENT);
+		
+		
 		JTextPane borrowerTextPane = new JTextPane();
-		borrowerTextPane.setText("대출자의 이름을 입력하세요.");
 		borrowerTextPane.setPreferredSize(new Dimension(350, 50));
 		borrowerTextPane.setFont(myFont);
 		borrowerTextPane.addMouseListener(new MouseAdapter()
@@ -30,20 +41,21 @@ public class MyLendOneBookPanel extends JPanel
 			@Override
 			public void mouseClicked(MouseEvent e)
 			{
-				borrowerTextPane.setText("");
 			}
 		});
 
+		JLabel bookTextLabel = new JLabel("대출을 원하는 책의 카탈로그 번호를 입력하세요.");
+		bookTextLabel.setFont(new Font("Serif", Font.BOLD, 15));
+		
 		JTextPane bookTextPane = new JTextPane();
-		bookTextPane.setText("대출을 원하는 책의 카탈로그 번호를 입력하세요.");
 		bookTextPane.setPreferredSize(new Dimension(350, 50));
-		bookTextPane.setFont(myFont);
+		Font lendFont = new Font("Serif",Font.BOLD,15);
+		bookTextPane.setFont(lendFont);
 		bookTextPane.addMouseListener(new MouseAdapter()
 		{
 			@Override
 			public void mouseClicked(MouseEvent e)
 			{
-				bookTextPane.setText("");
 			}
 		});
 
@@ -73,7 +85,10 @@ public class MyLendOneBookPanel extends JPanel
 		});
 
 		this.add(mainLabel);
+		this.add(blank);
+		this.add(borrowerTextLabel);
 		this.add(borrowerTextPane);
+		this.add(bookTextLabel);
 		this.add(bookTextPane);
 		this.add(okeyBtn);
 		this.add(cancleBtn);
