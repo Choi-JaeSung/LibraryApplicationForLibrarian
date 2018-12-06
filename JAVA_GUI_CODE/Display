@@ -1,0 +1,36 @@
+import javax.swing.JFrame;
+
+/**
+ * 
+ * @Author ()
+ * @Version ()
+ */
+public class Display implements ActionListener {
+	LibrarySystem library;
+	boolean loan;
+
+	public Display(boolean loan, LibrarySystem library) {
+		this.loan = loan;
+		this.library = library;
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		if (loan == true) {
+			JFrame frame = new JFrame();
+			frame.setTitle("DisplayBooksAvailableForLoanBtn");
+			frame.setSize(700, 595);
+			DisplayBooks display = new DisplayBooks(library, true);
+			frame.add(display);
+			frame.setVisible(true);
+		} else {
+			JFrame frame = new JFrame();
+			frame.setTitle("DisplayBooksOnLoanBtn");
+			frame.setSize(700, 595);
+			DisplayBooks display = new DisplayBooks(library, false);
+			frame.add(display);
+			frame.setVisible(true);
+		}
+	}
+
+}
