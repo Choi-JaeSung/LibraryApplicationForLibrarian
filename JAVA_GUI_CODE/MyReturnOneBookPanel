@@ -12,6 +12,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextPane;
 
+import Process.LibrarySystem;
+
 public class MyReturnOneBookPanel extends JPanel
 {
 	public MyReturnOneBookPanel(JFrame newFrame, LibrarySystem ourLib)
@@ -22,19 +24,23 @@ public class MyReturnOneBookPanel extends JPanel
 		Font myFont = new Font("Serif",Font.BOLD,20);
 		mainLabel.setFont(myFont);
 		
+		JLabel blank = new JLabel("대출자의 이름을 입력하세요.");
+		blank.setPreferredSize(new Dimension(0, 50));
 		
+		JLabel bookTextLabel = new JLabel("반납을 원하는 책의 카탈로그 번호 입력하세요.");
+		bookTextLabel.setFont(new Font("Serif", Font.BOLD, 15));
+		bookTextLabel.setAlignmentY(BOTTOM_ALIGNMENT);
 		
 		
 		JTextPane bookTextPane = new JTextPane();
-		bookTextPane.setText("반납을 원하는 책의 카탈로그 번호 입력하세요.");
 		bookTextPane.setPreferredSize(new Dimension(350, 50));
-		bookTextPane.setFont(myFont);
+		Font returnFont = new Font("Serif",Font.BOLD,15);
+		bookTextPane.setFont(returnFont);
 		bookTextPane.addMouseListener(new MouseAdapter()
 		{
 			@Override
 			public void mouseClicked(MouseEvent e)
 			{
-				bookTextPane.setText("");
 			}
 		});
 		
@@ -62,6 +68,8 @@ public class MyReturnOneBookPanel extends JPanel
 		});
 		
 		this.add(mainLabel);
+		this.add(blank);
+		this.add(bookTextLabel);
 		this.add(bookTextPane);
 		this.add(okeyBtn);
 		this.add(cancleBtn);
