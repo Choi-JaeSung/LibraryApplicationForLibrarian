@@ -13,9 +13,12 @@ import javax.swing.SwingConstants;
 
 import Process.LibrarySystem;
 
-public class MyLendOneBookPanel extends JPanel {
+public class MyLendOneBookPanel extends JPanel
+{
 	public JLabel result_label;
-	public MyLendOneBookPanel(JFrame newFrame, LibrarySystem ourLib) {
+
+	public MyLendOneBookPanel(JFrame newFrame, LibrarySystem ourLib)
+	{
 		JLabel mainLabel, name, catalogNumber;
 		JTextField nameT, catalogNumberT, cataNumT;
 		JButton button;
@@ -37,7 +40,7 @@ public class MyLendOneBookPanel extends JPanel {
 		nameT = new JTextField("", 15);
 		nameT.setBounds(100, 100, 200, 30);
 
-		catalogNumber= new JLabel("Books CatalougNumber");
+		catalogNumber = new JLabel("Books CatalougNumber");
 		catalogNumber.setBounds(0, 140, 400, 30);
 		catalogNumber.setHorizontalAlignment(SwingConstants.CENTER);
 		catalogNumber.setVerticalTextPosition(SwingConstants.CENTER);
@@ -61,20 +64,23 @@ public class MyLendOneBookPanel extends JPanel {
 
 		this.add(button);
 		this.add(result_label);
-		
-		button.addActionListener(new ActionListener() {
-			
+
+		button.addActionListener(new ActionListener()
+		{
+
 			@Override
-			public void actionPerformed(ActionEvent e) {
+			public void actionPerformed(ActionEvent e)
+			{
 				// TODO Auto-generated method stub
-				try{
+				try
+				{
 					ourLib.lendOneBook(nameT.getText(), Integer.parseInt(catalogNumberT.getText()), result_label);
-				}catch(NumberFormatException ex){
+				} catch (NumberFormatException ex)
+				{
 					result_label.setText("Please check the information you've entered");
 				}
 			}
 		});
-
 
 	}
 
