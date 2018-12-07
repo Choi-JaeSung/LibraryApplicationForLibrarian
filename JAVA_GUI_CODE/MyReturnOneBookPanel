@@ -1,3 +1,4 @@
+package GUI;
 
 import java.awt.Dimension;
 import java.awt.Font;
@@ -24,7 +25,7 @@ public class MyReturnOneBookPanel extends JPanel
 		Font myFont = new Font("Serif",Font.BOLD,20);
 		mainLabel.setFont(myFont);
 		
-		JLabel blank = new JLabel("대출자의 이름을 입력하세요.");
+		JLabel blank = new JLabel("");
 		blank.setPreferredSize(new Dimension(0, 50));
 		
 		JLabel bookTextLabel = new JLabel("반납을 원하는 책의 카탈로그 번호 입력하세요.");
@@ -36,13 +37,6 @@ public class MyReturnOneBookPanel extends JPanel
 		bookTextPane.setPreferredSize(new Dimension(350, 50));
 		Font returnFont = new Font("Serif",Font.BOLD,15);
 		bookTextPane.setFont(returnFont);
-		bookTextPane.addMouseListener(new MouseAdapter()
-		{
-			@Override
-			public void mouseClicked(MouseEvent e)
-			{
-			}
-		});
 		
 
 		JButton okeyBtn = new JButton("확인");
@@ -52,6 +46,9 @@ public class MyReturnOneBookPanel extends JPanel
 			@Override
 			public void actionPerformed(ActionEvent e)
 			{
+				String bookCatalNum = bookTextPane.getSelectedText();
+				ourLib.returnOneBook(Integer.parseInt(bookCatalNum));
+				ourLib.saveFile();
 				newFrame.dispose();
 			}
 		});
@@ -63,6 +60,7 @@ public class MyReturnOneBookPanel extends JPanel
 			@Override
 			public void actionPerformed(ActionEvent e)
 			{
+				
 				newFrame.dispose();
 			}
 		});
