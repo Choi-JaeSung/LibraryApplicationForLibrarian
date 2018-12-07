@@ -3,7 +3,7 @@
  */
 
 /**
- * @version 1.0.1
+ * @version 1.0.2
  * @author 2017315005 안시후, 2017315027 최재성, 2017315035 김선혁, 2017315053 후쿠미쓰 치아키
  */
 
@@ -13,22 +13,18 @@ import javax.swing.JFrame;
 
 import Process.LibrarySystem;
 
-public class MyFrame extends JFrame
-{
+public class MyFrame extends JFrame {
 
-	public MyFrame()
-	{
+	public MyFrame() {
 		this.setTitle("App for Librarian");
-		this.setSize(400, 430);
+		this.setSize(400, 650);
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 
 		LibrarySystem ourLib = new LibrarySystem("Team 1");
-		try
-		{
+		try{
 			ourLib.loadFile();
-		} catch (NullPointerException e)
-		{
-
+		}catch(NullPointerException e){
+		
 		}
 		this.add(new MyMainPanel(ourLib));
 
