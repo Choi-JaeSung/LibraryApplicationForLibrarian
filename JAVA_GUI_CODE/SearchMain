@@ -1,0 +1,95 @@
+import java.awt.Font;
+
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+
+/**
+ * 
+ * @Author ()
+ * @Version ()
+ */
+public class SearchMain extends JPanel {
+	JLabel title;
+	JScrollPane sp;
+	JTextArea text;
+	
+	public SearchMain(LibrarySystem library, boolean kind) {
+		this.setLayout(null);
+		this.setSize(700, 595);
+
+		if (kind == true) {
+			searchBorrower(library);
+		} else {
+			searchBook(library);
+		}
+	}
+	
+	public void searchBorrower(LibrarySystem library) {
+		title = new JLabel("Search Borrower");
+		title.setBounds(260, 0, 300, 50);
+		title.setFont(new Font("malgun gothic", Font.BOLD, 20));
+		this.add(title);
+		
+		JLabel name = new JLabel("Name");
+		name.setBounds(175, 50, 50, 25);
+		name.setFont(new Font("malgun gothic", Font.BOLD, 16));
+		this.add(name);
+		
+		JTextArea searchText = new JTextArea();
+		searchText.setBounds(235, 50, 200, 25);
+		searchText.setFont(new Font("malgun gothic", Font.BOLD, 16));
+		this.add(searchText);
+		
+		JButton search = new JButton("Search");
+		search.setBounds(445, 50, 100, 25);
+		search.setFont(new Font("malgun gothic", Font.BOLD, 16));
+		this.add(search);
+		
+		text = new JTextArea();
+		text.setEditable(false);
+		
+		sp = new JScrollPane(text);
+		sp.setBounds(5, 90, 675, 460);
+		sp.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+		sp.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+		this.add(sp);
+	}
+	
+	public void searchBook(LibrarySystem library) {
+		title = new JLabel("Search Books");
+		title.setBounds(280, 0, 300, 50);
+		title.setFont(new Font("malgun gothic", Font.BOLD, 20));
+		this.add(title);
+		
+		JComboBox<String> standard = new JComboBox<String>();
+		standard.addItem("Title");
+		standard.addItem("Author");
+		standard.addItem("CatalogueNumber");
+		standard.setBounds(110, 50, 130, 25);
+		this.add(standard);
+		
+		JTextArea searchText = new JTextArea();
+		searchText.setBounds(245, 50, 200, 25);
+		searchText.setFont(new Font("malgun gothic", Font.BOLD, 16));
+		this.add(searchText);
+		
+		JButton search = new JButton("Search");
+		search.setBounds(455, 50, 100, 25);
+		search.setFont(new Font("malgun gothic", Font.BOLD, 16));
+		this.add(search);
+		
+		
+		text = new JTextArea();
+		text.setEditable(false);
+		
+		sp = new JScrollPane(text);
+		sp.setBounds(5, 90, 675, 460);
+		sp.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
+		sp.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
+		this.add(sp);
+	}
+}
