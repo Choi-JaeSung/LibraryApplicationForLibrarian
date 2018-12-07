@@ -3,7 +3,7 @@
  */
 
 /**
- * @version 1.0.1
+ * @version 1.0.2
  * @author 2017315005 안시후, 2017315027 최재성, 2017315035 김선혁, 2017315053 후쿠미쓰 치아키
  */
 
@@ -21,121 +21,118 @@ import java.util.HashSet;
 import java.util.TreeSet;
 
 import javax.swing.JLabel;
+import javax.swing.JTextArea;
 
 import GUI.MyDisplayBooksPanel;
+import GUI.SearchMain;
 
-public class LibrarySystem
-{
+public class LibrarySystem {
 	private String name;
 	private HashSet<Borrower> borrowers = new HashSet<Borrower>();
 	private TreeSet<Book> books = new TreeSet<Book>(new Comp());
 
-	public LibrarySystem(String name)
-	{
+	public LibrarySystem(String name) {
 		this.name = name;
 	}
 
-	public String getName()
-	{
+	public String getName() {
 		return name;
 	}
 
-	public void setName(String name)
-	{
+	public void setName(String name) {
 		this.name = name;
 	}
 
-	public HashSet<Borrower> getborrowers()
-	{
+	public HashSet<Borrower> getborrowers() {
 		return borrowers;
 	}
 
-	public void setborrower(HashSet<Borrower> borrowers)
-	{
+	public void setborrower(HashSet<Borrower> borrowers) {
 		this.borrowers = borrowers;
 	}
 
-	public TreeSet<Book> getbooks()
-	{
+	public TreeSet<Book> getbooks() {
 		return books;
 	}
 
-	public void setbook(TreeSet<Book> books)
-	{
+	public void setbook(TreeSet<Book> books) {
 		this.books = books;
 	}
 
-	public Book findBook(int catalogNumber)
-	{
-		for (Book ob : books)
-		{
-			if (ob.getCatalogueNumber() == catalogNumber)
-			{
+	public Book findBook(int catalogNumber) {
+		for (Book ob : books) {
+			if (ob.getCatalogueNumber() == catalogNumber) {
 				return ob;
 			}
 		}
 		return null;
 	}
 
-	public Borrower findBorrower(String name)
-	{
-		for (Borrower ob : borrowers)
-		{
-			if (ob.getName().equals(name))
-			{
+	public Borrower findBorrower(String name) {
+		for (Borrower ob : borrowers) {
+			if (ob.getName().equals(name)) {
 				return ob;
 			}
 		}
 		return null;
 	}
 
-	public void registerOneBorrower(String name)
-	{
+	public void registerOneBorrower(String name) {
 		Borrower borrower = findBorrower(name);
-		if (borrower == null)
-		{
+		if (borrower == null) {
 			borrowers.add(new Borrower(name));
 		}
 	}
 
-	public void registerOneBorrower(String name, JLabel label)
-	{
+	public void registerOneBorrower(String name, JLabel label) {
 		Borrower borrower = findBorrower(name);
-		if (borrower == null)
-		{
+		if (borrower == null) {
 			borrowers.add(new Borrower(name));
 			label.setText("Register Complete");
-		} else
-		{
+		} else {
 			label.setText("Already Registered");
 			;
 		}
 	}
 
-	public void addOneBook(String title, String[] author, int catalogNumber)
-	{
+	public void deleteOneBorrower(String name, JLabel label) {
+		Borrower borrower = findBorrower(name);
+		if (borrower.getBooks().size() == 0) {
+			borrowers.remove(borrower);
+			label.setText("Deletion Complete");
+		} else {
+			label.setText("The conditions were not met.");
+		}
+	}
+
+	public void deleteOneBook(int catalogNumber, JLabel label) {
 		Book book = findBook(catalogNumber);
-		if (book == null)
-		{
+		if (book.getBorrower() == null) {
+			books.remove(book);
+			label.setText("Deletion Complete");
+		} else {
+			label.setText("The conditions were not met.");
+		}
+	}
+
+	public void addOneBook(String title, String[] author, int catalogNumber) {
+		Book book = findBook(catalogNumber);
+		if (book == null) {
 			books.add(new Book(title, author, catalogNumber));
 		}
 	}
 
-	public void addOneBook(String title, String[] author, JLabel label)
-	{
+	public void addOneBook(String title, String[] author, JLabel label) {
 		books.add(new Book(title, author, books.size() + 1));
 		label.setText("Register Complete");
 	}
 
-	public void lendOneBook(String name, int catalogNumber, JLabel result_label)
-	{
+	public void lendOneBook(String name, int catalogNumber, JLabel result_label) {
 		Borrower borrower = findBorrower(name);
 
-		if (borrower != null)
-		{
+		if (borrower != null) {
 			Book book = findBook(catalogNumber);
-			if (book.getBorrower() != null)
-			{
+			if (book.getBorrower() != null) {
 				Borrower borrowerOnLoan = book.getBorrower();
 				borrowerOnLoan.detachBook(book);
 				book.detachBorrower();
@@ -158,85 +155,88 @@ public class LibrarySystem
 
 			borrower.attachBook(book);
 			result_label.setText("Loan Complete");
-		} else
-		{
+		} else {
 			result_label.setText("Not registered name");
 		}
 	}
 
-	public void returnOneBook(int catalogNumber, JLabel result_label)
-	{
-		Book book = findBook(catalogNumber);
-		Borrower borrower = book.getBorrower();
-		if (borrower == null)
-		{
-			result_label.setText("Aleady returned");
-		} else
-		{
-			book.detachBorrower();
-			borrower.detachBook(book);
-			result_label.setText("Return suceed");
+	public void returnOneBook(int catalogNumber, JLabel result_label) {
+		try {
+			Book book = findBook(catalogNumber);
+			Borrower borrower = book.getBorrower();
+			if (borrower == null) {
+				result_label.setText("Aleady returned");
+			} else {
+				book.detachBorrower();
+				borrower.detachBook(book);
+				result_label.setText("Return suceed");
+			}
+		} catch (NullPointerException e) {
 		}
+
 	}
 
-	public void displayBooksOnLoan(MyDisplayBooksPanel panel)
-	{
+	public void displayBooksOnLoan(MyDisplayBooksPanel panel) {
 		String display = null;
-		for (Book ob : books)
-		{
-			if (ob.getBorrower() != null)
-			{
-				display = ob.getTitle() + " | ";
-				for (int i = 0; i < ob.getAuthor().length; i++)
-				{
-					display += ob.getAuthor()[i];
-					if (i != ob.getAuthor().length - 1)
-					{
+
+		panel.text.setText("");
+		panel.text.append("Title ┃ Author ┃ CatalogueNumber ┃ LoanDate ┃ ReturnDate  ┃ Borrower\n");
+		panel.text.append("───────────────────────────────────────────────────────────────\n");
+
+		for (Book book : books) {
+			if (book.getBorrower() != null) {
+				display = book.getTitle() + "┃ ";
+				for (int i = 0; i < book.getAuthor().length; i++) {
+					display += book.getAuthor()[i];
+					if (i != book.getAuthor().length - 1) {
 						display += ", ";
 					}
 				}
-				display += " | " + ob.getCatalogueNumber() + " | " + ob.getRentalDate() + " | " + ob.getReturnDate();
+				display += "┃ " + book.getCatalogueNumber();
+				display += "┃" + book.getRentalDate();
+				display += "┃ " + book.getReturnDate();
+				display += "┃ " + book.getBorrower().getName();
 				panel.text.append(display + "\n");
+				panel.text.append("───────────────────────────────────────────────────────────────\n");
+
 			}
 		}
 	}
 
-	public void displayBooksAvailableForLoan(MyDisplayBooksPanel panel)
-	{
+	public void displayBooksAvailableForLoan(MyDisplayBooksPanel panel) {
 		String display = null;
-		for (Book ob : books)
-		{
-			if (ob.getBorrower() == null)
-			{
-				display = ob.getTitle() + " | ";
-				for (int i = 0; i < ob.getAuthor().length; i++)
-				{
-					display += ob.getAuthor()[i];
-					if (i != ob.getAuthor().length - 1)
-					{
+		panel.text.setText("");
+		panel.text.append("Title ┃ Author ┃ CatalogueNumber ┃ LoanDate ┃ ReturnDate\n");
+		panel.text.append("───────────────────────────────────────────────────────────────\n");
+		for (Book book : books) {
+			if (book.getBorrower() == null) {
+				display = book.getTitle() + "┃ ";
+				for (int i = 0; i < book.getAuthor().length; i++) {
+					display += book.getAuthor()[i];
+					if (i != book.getAuthor().length - 1) {
 						display += ", ";
 					}
 				}
-				display += " | " + ob.getCatalogueNumber();
+				display += "┃ " + book.getCatalogueNumber();
+				display += "┃" + book.getRentalDate();
+				display += "┃ " + book.getReturnDate();
 				panel.text.append(display + "\n");
+				panel.text.append("───────────────────────────────────────────────────────────────\n");
+
 			}
 		}
 	}
 
-	public void saveFile()
-	{
-		try
-		{
+	public void saveFile() {
+		try {
 			FileWriter borrowerFile = new FileWriter("Borrower.txt");
 			FileWriter bookFile = new FileWriter("Book.txt");
 			String borrowerInformation;
 			String bookInformation;
 
-			for (Borrower ob : borrowers)
-			{
+			for (Borrower ob : borrowers) {
 				borrowerInformation = ob.getName();
-				for (Book book : ob.getBooks())
-				{
+				for (Book book : ob.getBooks()) {
 					borrowerInformation += "," + book.getCatalogueNumber() + "," + book.getRentalDate() + ","
 							+ book.getReturnDate();
 				}
@@ -244,11 +244,9 @@ public class LibrarySystem
 			}
 			borrowerFile.close();
 
-			for (Book ob : books)
-			{
+			for (Book ob : books) {
 				bookInformation = ob.getTitle() + ",";
-				for (String author : ob.getAuthor())
-				{
+				for (String author : ob.getAuthor()) {
 					bookInformation += author + ",";
 				}
 				bookInformation += ob.getCatalogueNumber() + "\n";
@@ -256,19 +254,16 @@ public class LibrarySystem
 			}
 			bookFile.close();
 
-		} catch (Exception e)
-		{
+		} catch (Exception e) {
 		}
 	}
 
-	public void loadFile()
-	{
+	public void loadFile() {
 		FileReader borrowerFile = null;
 		FileReader bookFile = null;
 		BufferedReader bufferedReader = null;
 
-		try
-		{
+		try {
 			bookFile = new FileReader("Book.txt");
 			bufferedReader = new BufferedReader(bookFile);
 			String[] bookData;
@@ -278,8 +273,7 @@ public class LibrarySystem
 			String string = new String();
 			string = bufferedReader.readLine();
 
-			while (string != null)
-			{
+			while (string != null) {
 				bookData = string.split(",");
 				title = bookData[0];
 				catalogNumber = Integer.parseInt(bookData[bookData.length - 1]);
@@ -296,14 +290,11 @@ public class LibrarySystem
 			string = bufferedReader.readLine();
 			String[] loanInformation = string.split(",");
 
-			while (string != null)
-			{
+			while (string != null) {
 				loanInformation = string.split(",");
 				registerOneBorrower(loanInformation[0]);
-				if (1 < loanInformation.length)
-				{
-					for (int i = 1; i < loanInformation.length; i += 3)
-					{
+				if (1 < loanInformation.length) {
+					for (int i = 1; i < loanInformation.length; i += 3) {
 						Book book = findBook(Integer.parseInt(loanInformation[i]));
 						Borrower borrower = findBorrower(loanInformation[0]);
 						book.attachBorrower(borrower);
@@ -314,9 +305,97 @@ public class LibrarySystem
 				}
 				string = bufferedReader.readLine();
 			}
-		} catch (Exception e)
-		{
+		} catch (Exception e) {
 		}
 	}
 
+	public void searchBorrower(String information, JTextArea text) {
+		String display;
+		text.setText("");
+		text.append("Title ┃ Author ┃ CatalogueNumber ┃ LoanDate ┃ ReturnDate\n");
+		text.append("───────────────────────────────────────────────────────────────\n");
+		for (Borrower borrower : borrowers) {
+			if (borrower.getName().equals(information)) {
+				for (Book book : borrower.getBooks()) {
+					display = book.getTitle() + "┃ ";
+					for (int i = 0; i < book.getAuthor().length; i++) {
+						display += book.getAuthor()[i];
+						if (i != book.getAuthor().length - 1) {
+							display += ", ";
+						}
+					}
+					display += "┃ " + book.getCatalogueNumber();
+					display += "┃" + book.getRentalDate();
+					display += "┃ " + book.getReturnDate();
+					text.append(display + "\n");
+					text.append("───────────────────────────────────────────────────────────────\n");
+				}
+			}
+		}
+	}
+
+	public void searchBooks(String information, JTextArea text, int index) {
+		String display;
+		text.setText("");
+		text.append("Title ┃ Author ┃ CatalogueNumber ┃ LoanDate ┃ ReturnDate\n");
+		text.append("───────────────────────────────────────────────────────────────\n");
+		for (Book book : books) {
+			switch (index) {
+			case 0:
+				if (book.getTitle().contains(information)) {
+					display = book.getTitle() + "┃ ";
+					for (int i = 0; i < book.getAuthor().length; i++) {
+						display += book.getAuthor()[i];
+						if (i != book.getAuthor().length - 1) {
+							display += ", ";
+						}
+					}
+					display += "┃ " + book.getCatalogueNumber();
+					display += "┃" + book.getRentalDate();
+					display += "┃ " + book.getReturnDate();
+					text.append(display + "\n");
+					text.append("───────────────────────────────────────────────────────────────\n");
+				}
+				break;
+			case 1:
+				for (String author : book.getAuthor()) {
+					if (author.contains(information)) {
+						display = book.getTitle() + "┃ ";
+						for (int i = 0; i < book.getAuthor().length; i++) {
+							display += book.getAuthor()[i];
+							if (i != book.getAuthor().length - 1) {
+								display += ", ";
+							}
+						}
+						display += "┃ " + book.getCatalogueNumber();
+						display += "┃" + book.getRentalDate();
+						display += "┃ " + book.getReturnDate();
+						text.append(display + "\n");
+						text.append("───────────────────────────────────────────────────────────────\n");
+					}
+				}
+				break;
+			case 2:
+				try {
+					if (book.getCatalogueNumber() == Integer.parseInt(information)) {
+						display = book.getTitle() + "┃ ";
+						for (int i = 0; i < book.getAuthor().length; i++) {
+							display += book.getAuthor()[i];
+							if (i != book.getAuthor().length - 1) {
+								display += ", ";
+							}
+						}
+						display += "┃ " + book.getCatalogueNumber();
+						display += "┃" + book.getRentalDate();
+						display += "┃ " + book.getReturnDate();
+						text.append(display + "\n");
+						text.append("───────────────────────────────────────────────────────────────\n");
+						break;
+					}
+				} catch (Exception e) {
+				}
+			}
+
+		}
+	}
 }
