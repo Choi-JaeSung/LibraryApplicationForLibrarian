@@ -36,13 +36,6 @@ public class MyLendOneBookPanel extends JPanel
 		JTextPane borrowerTextPane = new JTextPane();
 		borrowerTextPane.setPreferredSize(new Dimension(350, 50));
 		borrowerTextPane.setFont(myFont);
-		borrowerTextPane.addMouseListener(new MouseAdapter()
-		{
-			@Override
-			public void mouseClicked(MouseEvent e)
-			{
-			}
-		});
 
 		JLabel bookTextLabel = new JLabel("대출을 원하는 책의 카탈로그 번호를 입력하세요.");
 		bookTextLabel.setFont(new Font("Serif", Font.BOLD, 15));
@@ -51,13 +44,6 @@ public class MyLendOneBookPanel extends JPanel
 		bookTextPane.setPreferredSize(new Dimension(350, 50));
 		Font lendFont = new Font("Serif",Font.BOLD,15);
 		bookTextPane.setFont(lendFont);
-		bookTextPane.addMouseListener(new MouseAdapter()
-		{
-			@Override
-			public void mouseClicked(MouseEvent e)
-			{
-			}
-		});
 
 		JButton okeyBtn = new JButton("확인");
 		okeyBtn.addActionListener(new ActionListener()
