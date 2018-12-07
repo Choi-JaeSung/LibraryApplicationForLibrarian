@@ -3,7 +3,7 @@
  */
 
 /**
- * @version 1.0.1
+ * @version 1.0.2
  * @author 2017315005 안시후, 2017315027 최재성, 2017315035 김선혁, 2017315053 후쿠미쓰 치아키
  */
 
@@ -22,11 +22,9 @@ import javax.swing.SwingConstants;
 
 import Process.LibrarySystem;
 
-public class MyRegisterOneBorrowerPanel extends JPanel
-{
-	public MyRegisterOneBorrowerPanel(JFrame newFrame, LibrarySystem ourLib)
-	{
-		JLabel label, result_label;
+public class MyRegisterOneBorrowerPanel extends JPanel {
+	public MyRegisterOneBorrowerPanel(JFrame newFrame, LibrarySystem ourLib) {
+		JLabel label,result_label;
 		JTextField input;
 		JButton button;
 		this.setLayout(null);
@@ -50,16 +48,13 @@ public class MyRegisterOneBorrowerPanel extends JPanel
 		this.add(input);
 		this.add(button);
 		this.add(result_label);
-		button.addActionListener(new ActionListener()
-		{
+		button.addActionListener(new ActionListener() {
 			@Override
-			public void actionPerformed(ActionEvent e)
-			{
-				if (input.getText().equals(""))
-				{
+			public void actionPerformed(ActionEvent e) {
+				if(input.getText().equals("")){
 					result_label.setText("The name column is empty.");
-				} else
-				{
+				}
+				else{
 					ourLib.registerOneBorrower(input.getText(), result_label);
 					ourLib.saveFile();
 				}
