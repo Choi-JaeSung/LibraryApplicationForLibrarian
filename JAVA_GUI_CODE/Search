@@ -1,13 +1,20 @@
+/**
+ * Search implements ActionListener class
+ */
+
+/**
+ * @version 1.0.2
+ * @author 2017315005 안시후, 2017315027 최재성, 2017315035 김선혁, 2017315053 후쿠미쓰 치아키
+ */
+ 
+package GUI;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JFrame;
 
-/**
- * 
- * @Author ()
- * @Version ()
- */
+import Process.LibrarySystem;
+
 public class Search implements ActionListener {
 	LibrarySystem library;
 	boolean kind;
