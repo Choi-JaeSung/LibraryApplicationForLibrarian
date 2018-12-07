@@ -3,7 +3,7 @@
  */
 
 /**
- * @version 1.0.1
+ * @version 1.0.2
  * @author 2017315005 안시후, 2017315027 최재성, 2017315035 김선혁, 2017315053 후쿠미쓰 치아키
  */
 
@@ -22,12 +22,10 @@ import javax.swing.SwingConstants;
 
 import Process.LibrarySystem;
 
-public class MyLendOneBookPanel extends JPanel
-{
+public class MyLendOneBookPanel extends JPanel {
 	public JLabel result_label;
 
-	public MyLendOneBookPanel(JFrame newFrame, LibrarySystem ourLib)
-	{
+	public MyLendOneBookPanel(JFrame newFrame, LibrarySystem ourLib) {
 		JLabel mainLabel, name, catalogNumber;
 		JTextField nameT, catalogNumberT, cataNumT;
 		JButton button;
@@ -74,18 +72,15 @@ public class MyLendOneBookPanel extends JPanel
 		this.add(button);
 		this.add(result_label);
 
-		button.addActionListener(new ActionListener()
-		{
+		button.addActionListener(new ActionListener() {
 
 			@Override
-			public void actionPerformed(ActionEvent e)
-			{
+			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				try
-				{
+				try {
 					ourLib.lendOneBook(nameT.getText(), Integer.parseInt(catalogNumberT.getText()), result_label);
-				} catch (NumberFormatException ex)
-				{
+					ourLib.saveFile();
+				} catch (NumberFormatException ex) {
 					result_label.setText("Please check the information you've entered");
 				}
 			}
