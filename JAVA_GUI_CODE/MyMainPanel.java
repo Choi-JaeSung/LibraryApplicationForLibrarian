@@ -12,10 +12,12 @@ import javax.swing.JPanel;
 
 import Process.LibrarySystem;
 
-public class MyMainPanel extends JPanel {
+public class MyMainPanel extends JPanel
+{
 	JFrame newFrame;
 
-	public MyMainPanel(LibrarySystem ourLib) {
+	public MyMainPanel(LibrarySystem ourLib)
+	{
 
 		this.setSize(400, 430);
 
@@ -45,9 +47,11 @@ public class MyMainPanel extends JPanel {
 		this.add(lendOneBookBtn);
 		this.add(returnOneBookBtn);
 
-		registerOneBorrowerBtn.addActionListener(new ActionListener() {
+		registerOneBorrowerBtn.addActionListener(new ActionListener()
+		{
 			@Override
-			public void actionPerformed(ActionEvent e) {
+			public void actionPerformed(ActionEvent e)
+			{
 				newFrame = new JFrame("registerOneBorrower");
 				newFrame.setSize(400, 220);
 				newFrame.add(new MyRegisterOneBorrowerPanel(newFrame, ourLib));
@@ -56,9 +60,11 @@ public class MyMainPanel extends JPanel {
 			}
 		});
 
-		addOneBookBtn.addActionListener(new ActionListener() {
+		addOneBookBtn.addActionListener(new ActionListener()
+		{
 			@Override
-			public void actionPerformed(ActionEvent e) {
+			public void actionPerformed(ActionEvent e)
+			{
 				newFrame = new JFrame("addOneBook");
 				newFrame.setSize(400, 430);
 				newFrame.add(new MyAddOneBookPanel(newFrame, ourLib));
@@ -70,9 +76,11 @@ public class MyMainPanel extends JPanel {
 		displayBooksAvailableForLoanBtn.addActionListener(new Display(ourLib, true));
 		displayBooksOnLoanBtn.addActionListener(new Display(ourLib, false));
 
-		lendOneBookBtn.addActionListener(new ActionListener() {
+		lendOneBookBtn.addActionListener(new ActionListener()
+		{
 			@Override
-			public void actionPerformed(ActionEvent e) {
+			public void actionPerformed(ActionEvent e)
+			{
 				newFrame = new JFrame("lendOneBook");
 				newFrame.setSize(400, 430);
 				newFrame.add(new MyLendOneBookPanel(newFrame, ourLib));
@@ -81,9 +89,11 @@ public class MyMainPanel extends JPanel {
 			}
 		});
 
-		returnOneBookBtn.addActionListener(new ActionListener() {
+		returnOneBookBtn.addActionListener(new ActionListener()
+		{
 			@Override
-			public void actionPerformed(ActionEvent e) {
+			public void actionPerformed(ActionEvent e)
+			{
 				newFrame = new JFrame("returnOneBook");
 				newFrame.setSize(400, 220);
 				newFrame.add(new MyReturnOneBookPanel(newFrame, ourLib));
