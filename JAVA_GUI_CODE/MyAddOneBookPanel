@@ -16,7 +16,7 @@ public class MyAddOneBookPanel extends JPanel {
       JTextField titleT, authorT, cataNumT;
       JButton button;
       this.setLayout(null);
-      Font myFont = new Font("malgungothic", Font.BOLD, 20);
+      Font myFont = new Font("malgungothic", Font.BOLD, 30);
       
       mainLabel = new JLabel("Please write borrower name.");
       mainLabel.setBounds(0, 0, 400, 50);
